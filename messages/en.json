@@ -1,0 +1,42 @@
+{
+    "HomePage": {
+      "title": "Hello world!",
+      "about": "Go to the about page"
+    },
+
+    "Header": {
+      "amro97": "amro97",
+      "Academy": "Academy",
+      "Contact Us": "Contact Us",
+      "Log In": "Log In"
+    },
+
+    "Hero" : {
+      "heroTitle": "Learn Web Development",
+      "Learn Frontend Development": "Learn Frontend Development",
+      "learnFrontendWithTech": "with React, Next Js, TypeScript, Tailwind CSS",
+      "Learn Fullstack Development": "Learn Fullstack Development",
+      "learnFullstackWithTech": "with Next js, Node js, MongoDB",
+      "Example6": "Go to the about page"
+    },
+
+
+    "Footer": {
+      "Follow us": "Follow us",
+      "Example2": "Go to the about page",
+      "Example3": "Go to the about page",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+    },
+
+
+    "Example": {
+      "Example": "Hello world!",
+      "Example2": "Go to the about page",
+      "Example3": "Go to the about page",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+    }
+  }
