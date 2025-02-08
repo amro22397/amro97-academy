@@ -1,23 +1,13 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
-
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
+  useLocale,
+  useTranslations,
+} from 'next-intl';
+import Link from 'next/link';
 
-import { Navigation } from '../constants/navigation'
-import { Button } from "@/components/ui/button"
-
+import { Navigation } from '../constants/navigation';
 
 export default function Header() {
   const locale = useLocale();
@@ -89,6 +79,7 @@ export default function Header() {
               text-lg font-semibold tracking-tighter text-white"
               href="/"
             >
+              <h1>Welcome ENG/Amr</h1>
               {header('Contact Us')}
             </Link>
 
