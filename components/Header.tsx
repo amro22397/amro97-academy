@@ -79,7 +79,6 @@ export default function Header() {
               text-lg font-semibold tracking-tighter text-white"
               href="/"
             >
-              <h1>Welcome ENG/Amr</h1>
               {header('Contact Us')}
             </Link>
 
