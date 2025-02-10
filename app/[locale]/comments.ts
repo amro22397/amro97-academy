@@ -1,1 +1,1 @@
-// {hero('amro97')}
+// {footer('amro97')}

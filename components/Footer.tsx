@@ -229,8 +229,8 @@ export default function Footer() {
                     </svg>
                   </div>
                   <div className="p-6">
-                    This is the amro97 Academy website. <br/>
-                    All rights are reserved.
+                  {footer('allRightsText')}  <br/>
+                  {footer('All rights are reserved')}
                   </div>
                 </div>
               </a>
