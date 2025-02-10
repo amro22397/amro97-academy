@@ -1,23 +1,13 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
-
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
+  useLocale,
+  useTranslations,
+} from 'next-intl';
+import Link from 'next/link';
 
-import { Navigation } from '../constants/navigation'
-import { Button } from "@/components/ui/button"
-
+import { Navigation } from '../constants/navigation';
 
 export default function Header() {
   const locale = useLocale();
@@ -69,16 +59,19 @@ export default function Header() {
             </span>
           </Link>
 
-          <div className="hidden pl-14 align-middle xl:flex mt-[13.5px]">
+          <ul className="hidden pl-14 align-middle xl:flex mt-[13.5px]">
             {Navigation.map((nav, index) => (
-              <Link href={`/${locale}${nav.href}`} key={nav.name}
-              className={`mx-[19.5px] text-xl text-black hover:text-gray-800 active:scale-95
-               ${nav.style}`}>
-              {locale === "en" ? nav.name : locale === 'ar' && nav.arName}
-            </Link>
+              <li key={index}>
+                <Link 
+                  href={`/${locale}${nav.href}`} 
+                  className={`mx-[19.5px] text-xl text-black hover:text-gray-800 active:scale-95 ${nav.style}`}
+                >
+                  {locale === "en" ? nav.name : nav.arName}
+                </Link>
+              </li>
             ))}
-            
-          </div>
+          </ul>
+
         </div>
 
 

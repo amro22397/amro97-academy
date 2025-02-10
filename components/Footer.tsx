@@ -2,10 +2,13 @@
 
 /* eslint-disable @next/next/no-html-link-for-pages */
 
-import { Navigation } from "@/constants/navigation";
-import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
+import {
+  useLocale,
+  useTranslations,
+} from 'next-intl';
+import Link from 'next/link';
 
+import { Navigation } from '@/constants/navigation';
 
 export default function Footer() {
 
@@ -131,7 +134,7 @@ export default function Footer() {
               {/* <h2 className="mb-3 text-lg tracking-widest">Et.</h2> */}
               <div className="list-none space-y-2 py-3">
                 {Navigation.map((nav: any, index: any) => (
-                  <li>
+                  <li key={index}>
                   <Link href={`/${locale}${nav.href}`}
                   className={`${nav.style} text-black hover:underline active:scale-95`}
                   >
@@ -148,7 +151,7 @@ export default function Footer() {
               {/* <h2 className="mb-3 text-lg tracking-widest">Est.</h2> */}
               <nav className="list-none space-y-2 py-3">
                 {legal.map((item, index) => (
-                  <li>
+                  <li key={index}>
                   <Link href={`/${locale}/`}
                   className={`text-black hover:underline active:scale-95 ${item?.style}`}>
                   {locale === 'ar' ? item.arName : item.name}
