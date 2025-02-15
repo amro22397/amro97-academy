@@ -187,6 +187,8 @@ const page = () => {
 
 
         <div className="mx-auto px-5 pt-32 pb-24 lg:px-24 hidden">
+
+          
           <div className="my-3 flex w-full flex-col text-left lg:text-center">
             <h2 className="bold mb-8 text-4xl font-bold leading-tight text-black lg:text-6xl">
               Lorem ipsum elit sit unar,{" "}
@@ -194,6 +196,8 @@ const page = () => {
               consectetur adipiscing elit.
             </h2>
           </div>
+
+
           <div className="flex w-full flex-col text-left lg:text-center">
             <h3 className="text-2xl text-black">
               Lorem ipsum arcu, consectetur adipiscing elit. Viverra elementum
@@ -202,6 +206,9 @@ const page = () => {
               ac mus. Arcu quis feugiat.
             </h3>
           </div>
+
+
+
           <div className="flex w-full flex-row justify-center pt-24 text-center">
             <a
               href="/"

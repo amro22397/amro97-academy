@@ -211,7 +211,6 @@ export default function Footer() {
 
 
             <div className="flex flex-col items-center text-center w-[400px]">
-              <a href="/">
                 <div className="relative">
                   <div className="absolute top-0 right-0 pt-2 pr-2">
                     <svg
@@ -220,6 +219,7 @@ export default function Footer() {
                       viewBox="0 0 8 8"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      className='hidden'
                     >
                       <path
                         d="M6.66992 0.747559L0.669922 6.74756"
@@ -236,7 +236,6 @@ export default function Footer() {
                   {footer('All rights are reserved')}
                   </div>
                 </div>
-              </a>
             </div>
           </div>
         </div>

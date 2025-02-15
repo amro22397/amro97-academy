@@ -40,13 +40,13 @@ export default function Header() {
       fixed top-0 left-0 w-full z-50 bg-white border-b border-solid border-gray-300/80">
         <div className="mt-0 pb-0 flex flex-row justify-center items-center">
           <Link
-            href="/"
+            href={`/${locale}/`}
             className="text-3xl font-bold text-black 
           flex flex-row items-center justify-center gap-1"
           >
             <span
-              className="tracking-wider text-3xl"
-              style={locale === "en" ? { fontFamily: "Poppins" } : {}}
+              className="text-[44px] text-blue-600"
+              style={locale === "en" ? { fontFamily: "Iceberg" } : {}}
             >
               {header('amro97')}
             </span>
@@ -100,7 +100,6 @@ export default function Header() {
 
         <div className="items-center hidden">
           
-
 
           <button className="pr-12 pl-4 hidden">
             <svg

@@ -1,10 +1,17 @@
-import { useTranslations } from "next-intl";
+'use client'
+
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
   const hero = useTranslations("Hero");
+
+  const locale = useLocale();
+
+  const router = useRouter();
 
   return (
     <div
@@ -22,13 +29,17 @@ const Hero = () => {
         <div className="w-full flex flex-col justify-start items-start
         ml-3 gap-6">
           <Button className="heroButtonWidth py-11 bg-blue-600 hover:bg-blue-600/95 transition-all duration-100
-          text-xl flex flex-col gap-1">
+          text-xl flex flex-col gap-1"
+          onClick={() => router.push(`/${locale}/courses/frontend`)}
+          >
           <span className="text-3xl font-semibold tracking-wider">{hero('Learn Frontend Development')}</span>
           <span className="text-xl">{hero('learnFrontendWithTech')}</span>
           </Button>
 
           <Button className="heroButtonWidth py-11 bg-yellow-600 hover:bg-yellow-600/95 transition-all duration-100
-          text-xl flex flex-col gap-1">
+          text-xl flex flex-col gap-1"
+          onClick={() => router.push(`/${locale}/courses/fullstack`)}
+          >
           <span className="text-3xl font-semibold tracking-wider">{hero('Learn Fullstack Development')}</span>
           <span className="text-xl">{hero('learnFullstackWithTech')}</span>
           </Button>
