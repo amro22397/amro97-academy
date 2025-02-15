@@ -1,4 +1,4 @@
-export const arabicFonts = [
+export const englishFonts = [
     {
       name: "Outfit",
       phontName: "Outfit",
