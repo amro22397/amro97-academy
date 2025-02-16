@@ -41,6 +41,7 @@
     "FrontendVideos": {
       "Title": "Learn Frontend Development with Projects",
       "ApplyAtLeast": "If you apply at least 5-6 frontend projects you will be able to do most things that you want if you want to make real projects.",
+      "GuideForApplying": "Guide for applying Frontend Projects",
       "Example5": "Go to the about page",
       "Example6": "Go to the about page"
     },
@@ -49,11 +50,16 @@
       "Title": "Learn Fullstack Development with Projects",
       "GetMostBenifits": "If you want to apply fullstack projects in the shortest time and get most benefits, you can follow this video",
       "ApplyAtLeast": "If you apply at least 3-4 good fullstack projects you will be able to do most things that you want if you want to make real projects.",
-      "Example6": "Go to the about page"
+      "GuideForApplying": "Guide for applying Fullstack Projects",
+      "Example7": "Yes. It adheres to the WAI-ARIA design pattern.",
+      "Example8": "Go to the about page",
+      "Example9": "Go to the about page",
+      "Example0": "Go to the about page"
+
     },
 
     "VideoAndMenuDesc": {
-      "Description1": "If you spend at least about 4 to 5 hours every from (6-7 am) until (4-5 pm)",
+      "Description1": "If you spend at least about 4 to 5 hours every day from (6-7 am) until (4-5 pm)",
       "Description2": "applying from projects you can finish applying about 2-3 hours from the youtube projects each day.",
       "Example3": "Go to the about page",
       "Example4": "Go to the about page",

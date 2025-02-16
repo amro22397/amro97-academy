@@ -99,6 +99,7 @@ const VideoAndMenu = ({ videos }: {
       bg-gray-200/75 w-[450px]"
         ref={scrollRef}
         onScroll={handleScroll}
+        key={videos.length}
       >
         {videos.map((video: Video, index: number) => (
           <>

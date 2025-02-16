@@ -9,6 +9,15 @@ import VideoAndMenu from "@/components/VideoAndMenu";
 import { useTranslations } from "next-intl";
 import VideoAndMenuDesc from "@/components/VideoAndMenuDesc";
 
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+
 const page = () => {
 
   const frontendVideosPage = useTranslations("FrontendVideos")
@@ -17,16 +26,38 @@ const page = () => {
 
     <div className="videosPage">
     
-    <h1 className="text-black text-3xl font-semibold my-0">
+    <h1 className="text-black text-3xl font-semibold my-8">
         {frontendVideosPage("Title")}
       </h1>
-
-      <p className="text-black my-6 text-center">
-      <VideoAndMenuDesc />
-      <span className="">{frontendVideosPage("ApplyAtLeast")}</span>
-      </p>
       
     <VideoAndMenu videos={frontendVideos} />
+
+
+
+    
+    <Accordion
+        type="single"
+        collapsible
+        className="bg-neutral-200/75 px-4 w-[50%]"
+      >
+        <AccordionItem value="item-1">
+          <AccordionTrigger>
+            {frontendVideosPage("GuideForApplying")}
+          </AccordionTrigger>
+          <AccordionContent>
+            <div className="text-[16px]">
+              <p
+                className="text-black my-6 text-center
+      flex flex-col items-center gap-1"
+              >
+                <VideoAndMenuDesc />
+                <span className="">{frontendVideosPage("ApplyAtLeast")}</span>
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+
 
     </div>
   );

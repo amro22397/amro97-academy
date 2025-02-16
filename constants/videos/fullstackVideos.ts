@@ -409,6 +409,17 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'Next.js & Supabase Twitter Clone',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=QdxUZhLHZiA',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
         title: 'Quiz App With Next.js',
         description: '',
         notes: '',
@@ -469,6 +480,17 @@ export const fullstackVideos = [
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=zgGhzuBZOQg',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Movie App - React 18, Chakra UI, Firebase Auth and Database',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=eh8mpiN-7bA',
         videoLink: '',
         image: '',
         category: 'additional',
