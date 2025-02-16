@@ -40,7 +40,7 @@
 
     "FrontendVideos": {
       "Title": "Learn Frontend Development with Projects",
-      "Example4": "Go to the about page",
+      "ApplyAtLeast": "If you apply at least 5-6 frontend projects you will be able to do most things that you want if you want to make real projects.",
       "Example5": "Go to the about page",
       "Example6": "Go to the about page"
     },
@@ -48,7 +48,7 @@
     "FullstackVideos": {
       "Title": "Learn Fullstack Development with Projects",
       "GetMostBenifits": "If you want to apply fullstack projects in the shortest time and get most benefits, you can follow this video",
-      "Example5": "Go to the about page",
+      "ApplyAtLeast": "If you apply at least 3-4 good fullstack projects you will be able to do most things that you want if you want to make real projects.",
       "Example6": "Go to the about page"
     },
 

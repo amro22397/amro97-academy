@@ -86,6 +86,64 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'WhatsApp Clone - NextJS, React, Typescript, Prisma, Tailwind CSS - Part 1/2',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=TalBbvAhdIY',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Whatsapp clone Vuk Rosic'
+    },
+
+    {
+        title: 'WhatsApp Clone - NextJS, React, Typescript, Prisma, Tailwind CSS - Part 2/2',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=XN8H9W6GUgY',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Whatsapp clone Vuk Rosic'
+    },
+
+    {
+        title: 'WhatsApp Clone | Video Calls, Screen Sharing | React.js, TypeScript',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=sQ1zvdS8eU8',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Whatsapp clone'
+    },
+
+    {
+        title: 'NextJs 13 Uber Clone Web App : NextJs, React.js, Tailwindcss, Google Map, Stripe',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=pwsjvnADNGk',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+    },
+
+    {
+        title: 'TikTok Clone with Next JS, React, Typescript, Tailwind CSS, Zustand, AppWrite, Vercel',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=7zLyVzItZlQ',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+    },
+
+    {
         title: 'Video Conferencing App with Next JS',
         description: '',
         notes: '',
@@ -124,6 +182,78 @@ export const fullstackVideos = [
     // },
 
     {
+        title: 'Telegram Clone 1.0 (Next.js, React, Tailwind CSS, Firebase, Vercel Deployment)',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=yeo1KALI-2k',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Telegram Clone'
+    },
+
+    {
+        title: 'Telegram Clone with Next.js 13 & Express (Tailwind,Socket.io,Mongo)',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=TkHmVpyPvOU',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Telegram Clone'
+    },
+
+    {
+        title: 'Real-Time Chat App with NextJS, React, ShadcnUI, and Tailwind',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=WmMHbLzQI98',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Chat App'
+    },
+
+    {
+        title: 'Real-Time Chat Messaging App | Next JS, Next Auth, MongoDB, Pusher, Tailwind, React',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=2Zv8YYq1ymo',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Chat App'
+    },
+
+    {
+        title: 'Whatsapp Clone with NEXT.JS! (1-1 Messaging, Live Status, Styled-Components, React)',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=svlEVg0To_c',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Chat App'
+    },
+
+    {
+        title: 'Chat App using React and Firebase',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=k4mjF4sPITE',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Chat App'
+    },
+
+    {
         title: 'Next.js Expense Tracker app using React, Tailwind Css, Drizzle ORM, Clerk',
         description: '',
         notes: '',
@@ -142,7 +272,7 @@ export const fullstackVideos = [
         videoLink: '',
         image: '',
         category: 'additional',
-        arCategory: 'أساسي',
+        arCategory: 'إضافي',
     },
 
     {
@@ -153,7 +283,18 @@ export const fullstackVideos = [
         videoLink: '',
         image: '',
         category: 'additional',
-        arCategory: 'أساسي',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'LeetCode Clone with React, Next JS, TypeScript, Tailwind CSS, Firebase',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=GnodscC2p-A',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
     },
 
     {
@@ -194,6 +335,18 @@ export const fullstackVideos = [
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=Iw1YmBoOYb4&t=353s',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Next.js WhatsApp Web Clone (Stream, Clerk Auth, Web Push Notifications, Tailwind CSS, TypeScript)',
+        description: '',
+        notes: 'This app uses service called stream it is not recommended to use to make apps.',
+        arNotes: 'هذا التطبيق يستخدم خدمة إسمها stream لا ينصح بناء تطبيقات الويب بها',
+        youtubeLink: 'https://www.youtube.com/watch?v=9afMU7GOcAg',
         videoLink: '',
         image: '',
         category: 'additional',

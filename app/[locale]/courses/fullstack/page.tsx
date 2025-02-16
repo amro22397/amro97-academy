@@ -25,6 +25,7 @@ const page = () => {
       <p className="text-black my-6 text-center
       flex flex-col items-center gap-1">
       <VideoAndMenuDesc />
+      <span className="">{fullstackVideosPage("ApplyAtLeast")}</span>
       <span className="mb-2 font-semibold">{fullstackVideosPage("GetMostBenifits")} 
         <Link href="" className="mx-2 text-indigo-700 hover:underline active:text-black/75"
         >Click here</Link>

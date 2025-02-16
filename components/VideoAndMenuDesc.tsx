@@ -12,6 +12,7 @@ const VideoAndMenuDesc = () => {
     <>
       {videoAndMenuDescPage("Description1")} <br/>
       {videoAndMenuDescPage("Description2")} <br />
+      
     </>
   )
 }

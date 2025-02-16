@@ -23,6 +23,7 @@ const page = () => {
 
       <p className="text-black my-6 text-center">
       <VideoAndMenuDesc />
+      <span className="">{frontendVideosPage("ApplyAtLeast")}</span>
       </p>
       
     <VideoAndMenu videos={frontendVideos} />
