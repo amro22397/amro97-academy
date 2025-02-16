@@ -37,7 +37,7 @@ export default function Header() {
       </div> */}
 
       <div className="grotesk mt-0 mb-16 flex items-center justify-between pt-[10.5px] pb-[12px] px-4 sm:mx-0 sm:mb-20 sm:px-0 md:px-14
-      fixed top-0 left-0 w-full z-50 bg-white border-b border-solid border-gray-300/80">
+      w-full z-30 bg-white border-b border-solid border-gray-300/80">
         <div className="mt-0 pb-0 flex flex-row justify-center items-center">
           <Link
             href={`/${locale}/`}

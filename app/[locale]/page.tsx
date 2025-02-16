@@ -14,8 +14,9 @@ const page = () => {
       <link rel="icon" href="/favicon.ico" />
     </Head> */}
 
-<div className="grotesk mx-auto">
-      <section className="w-full mx-auto text-black">
+<div className="grotesk mx-auto ">
+      <section className="w-full mx-auto text-black
+      mb-10">
         {/* <div className="mx-auto flex flex-row justify-center items-center p-3 pt-0 lg:pt-4">
           <div className="flex flex-col justify-center items-center">
             <h2 className="lg:text-5xl text-3xl font-bold leading-none text-black inline-block

@@ -12,7 +12,7 @@ const page = () => {
         </style>
         </head>`;
   return (
-    <div className="mx-8 my-[122px] flex gap-10 flex-col" dir="rtl">
+    <div className="font-page" dir="rtl">
       <h1 className="flex text-5xl" style={{ fontFamily: "Readex Pro" }}>
         الخطوط العربية
       </h1>

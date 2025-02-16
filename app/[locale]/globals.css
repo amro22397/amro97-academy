@@ -12,6 +12,23 @@ body {
   font-family: "Space Grotesk", sans-serif;
 }
 
+.heroButtonLearn {
+  @apply py-11 px-9 
+  transition-all duration-100 text-xl flex flex-col gap-1;
+}
+
+.videosPage {
+  @apply flex flex-col items-center justify-center mb-20;
+}
+
+.video-notes {
+  @apply text-gray-700 my-4 w-[80%];
+}
+
+.font-page {
+  @apply mx-8 flex gap-10 flex-col;
+}
+
 .heroButtonWidth {
   @apply w-[75%];
 }

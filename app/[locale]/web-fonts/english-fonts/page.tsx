@@ -14,7 +14,7 @@ const page = () => {
 
 
   return (
-    <div className="mx-8 my-[122px] flex gap-10 flex-col" dir="ltr">
+    <div className="font-page" dir="ltr">
       <h1 className="flex text-5xl" style={{ fontFamily: "Readex Pro" }}>
         English Fonts
       </h1>

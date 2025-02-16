@@ -20,11 +20,42 @@
       "Example6": "Go to the about page"
     },
 
-
     "Footer": {
       "Follow us": "Follow us",
       "allRightsText": "This is the amro97 Academy website. ",
       "All rights are reserved": "All rights are reserved.",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+    },
+
+    "VideoAndMenu": {
+      "Learning mode": "Learning mode",
+      "Example2": "Go to the about page",
+      "Example3": "Go to the about page",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+    },
+
+    "FrontendVideos": {
+      "Title": "Learn Frontend Development with Projects",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+    },
+
+    "FullstackVideos": {
+      "Title": "Learn Fullstack Development with Projects",
+      "GetMostBenifits": "If you want to apply fullstack projects in the shortest time and get most benefits, you can follow this video",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+    },
+
+    "VideoAndMenuDesc": {
+      "Description1": "If you spend at least about 4 to 5 hours every from (6-7 am) until (4-5 pm)",
+      "Description2": "applying from projects you can finish applying about 2-3 hours from the youtube projects each day.",
+      "Example3": "Go to the about page",
       "Example4": "Go to the about page",
       "Example5": "Go to the about page",
       "Example6": "Go to the about page"

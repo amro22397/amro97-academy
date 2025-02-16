@@ -4,13 +4,14 @@ export const frontendVideos = [
     // additional
 
     {
-        title: 'Create A Simple Website Using React JS ',
+        title: 'Simple Website Using React JS ',
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=1qGIwZjdOhs',
         videoLink: '',
         image: '',
         category: 'basic',
+        arCategory: 'أساسي',
     },
 
     {
@@ -21,86 +22,75 @@ export const frontendVideos = [
         videoLink: '',
         image: '',
         category: 'basic',
+        arCategory: 'أساسي',
     },
 
     {
-        title: "Let's Build a CRUD Todo App with Next.js 14, MongoDB, and Prisma",
-        description: '',
-        notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=M07doghBdeg',
-        videoLink: '',
-        image: '',
-        category: 'basic',
-    },
-
-    {
-        title: "Weather App Using React JS ",
-        description: '',
-        notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=zs1Nq2s_uy4',
-        videoLink: '',
-        image: '',
-        category: 'basic',
-    },
-
-    {
-        title: "How To Create Random Quote Generator In React JS ",
+        title: "Random Quote Generator In React JS ",
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=oZb_nGEKZTQ',
         videoLink: '',
         image: '',
         category: 'basic',
+        arCategory: 'أساسي',
     },
 
     {
-        title: "Build A Advance Music Player Application with React JS | Fully Customized",
+        title: "React Node.js Youtube Clone Full Tutorial (Redux, JWT, Cookies)  ",
         description: '',
         notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=dALOX3sIfsk',
+        youtubeLink: 'https://www.youtube.com/watch?v=CCF-xV3RSSs',
         videoLink: '',
         image: '',
         category: 'basic',
+        arCategory: 'أساسي',
     },
 
     {
-        title: "Build and Deploy a Better Spotify 2.0 Clone Music App",
+        title: "A Better Spotify 2.0 Clone Music App",
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=I1cpb0tYV74',
         videoLink: '',
         image: '',
         category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Spotify',
     },
 
     {
-        title: "Create Spotify Clone Using React JS & Tailwind CSS",
+        title: "Spotify Clone Using React JS & Tailwind CSS",
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=amFYvQK4huo',
         videoLink: '',
         image: '',
         category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Spotify',
     },
 
     {
-        title: "Build an Expense Tracker & Financial Advisor App",
+        title: "Expense Tracker & Financial Advisor App",
         description: '',
         notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=M07doghBdeg',
+        youtubeLink: 'https://www.youtube.com/watch?v=gvUsUpDlav4',
         videoLink: '',
         image: '',
         category: 'basic',
+        arCategory: 'أساسي',
     },
 
     {
-        title: "Weather App with Next.js, Tailwind CSS, and TypeScript",
+        title: "Tic Tac Toe Game In React",
         description: '',
         notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=KkC_wYM_Co4',
+        youtubeLink: 'https://www.youtube.com/watch?v=lYtPscvwgP4',
         videoLink: '',
         image: '',
         category: 'basic',
+        arCategory: 'أساسي',
     },
 
     {
@@ -111,35 +101,67 @@ export const frontendVideos = [
         videoLink: '',
         image: '',
         category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: "Build A Advance Music Player Application with React JS | Fully Customized",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=dALOX3sIfsk',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+
+    },
+
+    {
+        title: "Weather App Using React JS ",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=zs1Nq2s_uy4',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Weather app'
+    },
+
+    {
+        title: "Weather App with Next.js, Tailwind CSS, and TypeScript",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=KkC_wYM_Co4',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Weather app'
     },
 
     {
         title: 'React Chat App Full Tutorial 2024 ',
         description: '',
         notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=domt_Sx-wTY&t=9s',
+        youtubeLink: 'https://www.youtube.com/watch?v=domt_Sx-wTY',
         videoLink: '',
         image: '',
         category: 'additional',
-    },
-    {
-        title: 'dropdown navigation menu',
-        description: '',
-        notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=lOo8diyD2fg',
-        videoLink: '',
-        image: '',
-        category: 'basic',
+        arCategory: 'إضافي',
+
     },
 
     {
-        title: 'react multi step form typescript shadcn',
+        title: 'LMS Website Using React JS ',
         description: '',
         notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=m7nrIm8DUic',
+        youtubeLink: 'https://www.youtube.com/watch?v=p2zWawmDkF4',
         videoLink: '',
         image: '',
         category: 'additional',
+        arCategory: 'إضافي',
+
     },
 
     {
@@ -150,46 +172,56 @@ export const frontendVideos = [
         videoLink: '',
         image: '',
         category: 'additional',
+        arCategory: 'إضافي',
+
     },
 
     {
-        title: 'How to Build Tetris in React - GameDev Tutorial',
+        title: 'Tetris in React - GameDev Tutorial',
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=ZGOaCxX8HIU',
         videoLink: '',
         image: '',
         category: 'additional',
+        arCategory: 'إضافي',
+
     },
 
     {
-        title: 'Build a Car Website Using Next JS, Tailwind CSS And Framer Motion',
+        title: 'Car Website Using Next JS, Tailwind CSS And Framer Motion',
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=iWAUAOqCHks',
         videoLink: '',
         image: '',
         category: 'additional',
+        arCategory: 'إضافي',
+
     },
 
     {
-        title: 'Build & Deploy a Modern Travel Website with Next JS 15, TypeScript, and Tailwind CSS',
+        title: 'Modern Travel Website with Next JS 15, TypeScript, and Tailwind CSS',
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=OfE9v4-dV2o',
         videoLink: '',
         image: '',
         category: 'additional',
+        arCategory: 'إضافي',
+
     },
 
     {
-        title: 'Build a Responsive Real Estate Website with Next JS 14, TypeScript & Tailwind CSS',
+        title: 'Responsive Real Estate Website with Next JS 14, TypeScript & Tailwind CSS',
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=ytD2xpxZMOU',
         videoLink: '',
         image: '',
         category: 'additional',
+        arCategory: 'إضافي',
+
     },
 
     {
@@ -200,6 +232,8 @@ export const frontendVideos = [
         videoLink: '',
         image: '',
         category: 'additional',
+        arCategory: 'إضافي',
+
     },
 
     {
@@ -210,5 +244,7 @@ export const frontendVideos = [
         videoLink: '',
         image: '',
         category: 'additional',
+        arCategory: 'إضافي',
+
     },
 ]
