@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Providers } from "../provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,6 +54,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Providers>
         <NextIntlClientProvider messages={messages}>
               <Header />
           
@@ -60,6 +62,7 @@ export default async function RootLayout({
 
           <Footer />
         </NextIntlClientProvider>
+        </Providers>
       </body>
     </html>
   );

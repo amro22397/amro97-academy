@@ -8,6 +8,7 @@ import {
 import Link from 'next/link';
 
 import { Navigation } from '../constants/navigation';
+import ThemeSwitch from './ThemeSwitch';
 
 export default function Header() {
   const locale = useLocale();
@@ -75,10 +76,12 @@ export default function Header() {
         </div>
 
 
-        <div className="hidden text-right xl:flex xl:flex-row gap-6">
+        <div className="hidden text-right xl:flex xl:flex-row items-center justify-center gap-6
+        mt-2">
+
           <Link
-              className="bg-blue mt-2 inline-flex items-center px-8 py-3
-              hover:bg-blue-700 active:scale-95
+              className="bg-blue inline-flex items-center px-8 py-3
+              hover:bg-blue-700 active:bg-blue-800
               text-lg font-semibold tracking-tighter text-white"
               href="/"
             >
@@ -86,14 +89,16 @@ export default function Header() {
             </Link>
 
           <Link
-              className="bg-green-500 mt-2 inline-flex items-center px-8 py-3
-              hover:bg-green-400 active:scale-95
+              className="bg-green-500 inline-flex items-center px-8 py-3
+              hover:bg-green-600 active:bg-green-700
                text-lg font-semibold tracking-tighter text-white
               "
               href="/"
             >
               {header('Log In')}
             </Link>
+
+            <ThemeSwitch />
             
           </div>
 
