@@ -1,6 +1,80 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
-    }
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+
+  "Header": {
+    "amro97": "amro97",
+    "Academy": "أكاديمية",
+    "Contact Us": "تواصل معنا",
+    "Log In": "سجل الدخول"
+  },
+
+  "Hero" : {
+    "heroTitle": "تعلم تصميم المواقع",
+    "Learn Frontend Development": "مشاريع تصميم الواجهة الأمامية",
+    "learnFrontendWithTech": "with React, Next Js, TypeScript, Tailwind CSS",
+    "Learn Fullstack Development": "مشاريع تصميم الواجهة الكاملة",
+    "learnFullstackWithTech": "with Next js, Node js, MongoDB",
+    "Example6": "Go to the about page"
+  },
+
+  "Footer": {
+    "Follow us": "تابعنا",
+    "allRightsText": "هذا موقع أكاديمية عمرو 97. ",
+    "All rights are reserved": "جميع الحقوق محفوظة.",
+    "Example4": "Go to the about page",
+    "Example5": "Go to the about page",
+    "Example6": "Go to the about page"
+  },
+
+  "VideoAndMenu": {
+    "Learning mode": "وضع التعلم",
+    "Example2": "Go to the about page",
+    "Example3": "Go to the about page",
+    "Example4": "Go to the about page",
+    "Example5": "Go to the about page",
+    "Example6": "Go to the about page"
+  },
+
+  "FrontendVideos": {
+    "Title": "تعلم تصميم الواجهة الأمامية عن طريق المشاريع",
+    "ApplyAtLeast": "إذا قمت بتطبيق عدد 5-6 مشاريع واجهة أمامية سيصبح بإمكانك تطبيق معظم الأشياء التي تريدها على مشاريعك الحقيقية الخاصة",
+    "GuideForApplying": "دليلك لتطبيق مشاريع الواجهة الأمامية",
+    "Example5": "Go to the about page",
+    "Example6": "Go to the about page"
+  },
+
+  "FullstackVideos": {
+    "Title": "تعلم تصميم الواجهة الكاملة عن طريق المشاريع",
+    "GetMostBenifits": "إذا كنت تريد تطبيق مشاريع واجهة كاملة في أقصر وقت وتحقق أكبر فائدة يمكنك متابعة هذا الفيديو",
+    "ApplyAtLeast": "إذا قمت بتطبيق عدد 3-4 مشاريع واجهة كاملة سيصبح بإمكانك تطبيق معظم الأشياء التي تريدها على مشاريعك الحقيقية الخاصة",
+    "GuideForApplying": "دليلك لتطبيق مشاريع الواجهة الكاملة",
+    "Click here": "أضغط هنا",
+    "Example8": "Go to the about page",
+    "Example9": "Go to the about page",
+    "Example0": "Go to the about page"
+
+  },
+
+  "VideoAndMenuDesc": {
+    "Description1": "إذا قمت بمضي على الأقل حوالي 4 إلى 5 ساعات يوميا منذ (6-7) صباحا وحتى (4-5) مساءا",
+    "Description2": "وأنت تطبق مشاريع من الموقع يمكنك تطبيق 2-3 ساعات من فيديوهات المشاريع على اليوتيوب كل يوم",
+    "عربي": "وأنت تطبق مشاريع من الموقع يمكنك تطبيق 2-3 ساعات من فيديوهات المشاريع على اليوتيوب كل يوم",
+    "Example3": "Go to the about page",
+    "Example4": "Go to the about page",
+    "Example5": "Go to the about page",
+    "Example6": "Go to the about page"
+  },
+
+
+  "Example": {
+    "Example": "Hello world!",
+    "Example2": "Go to the about page",
+    "Example3": "Go to the about page",
+    "Example4": "Go to the about page",
+    "Example5": "Go to the about page",
+    "Example6": "Go to the about page"
   }
+}

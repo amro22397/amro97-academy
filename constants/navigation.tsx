@@ -1,15 +1,20 @@
+import CoursesContent from "@/components/FlayoutContent/CoursesContent"
+import WebFontsContent from "@/components/FlayoutContent/WebFontsContent"
+
 export const Navigation = [
     {
         name: 'Home',
         arName: 'الصفحة الرئيسية',
-        href: '/',
+        href: '',
         style: '',
+        
     },
     {
         name: 'Roadmaps',
         arName: 'المسارات',
         href: '/roadmaps',
         style: 'hidden',
+        
     },
 
     {
@@ -17,6 +22,8 @@ export const Navigation = [
         arName: 'الكورسات',
         href: '/roadmaps',
         style: '',
+        FlayOutConent: <CoursesContent />,
+        noCourserPointer: true,
     },
 
     {
@@ -24,6 +31,8 @@ export const Navigation = [
         arName: 'خطوط الويب',
         href: '/web-fonts',
         style: '',
+        FlayOutConent: <WebFontsContent />,
+        noCourserPointer: true,
     },
     {
         name: 'About us',

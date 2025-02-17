@@ -9,11 +9,17 @@ import Link from 'next/link';
 
 import { Navigation } from '../constants/navigation';
 import ThemeSwitch from './ThemeSwitch';
+import { usePathname } from 'next/navigation';
+import FlayoutLink from './FlayoutLink';
 
 export default function Header() {
   const locale = useLocale();
 
   const header = useTranslations('Header');
+
+  const pathname = usePathname();
+
+  console.log(pathname)
 
   return (
     <>
@@ -43,34 +49,39 @@ export default function Header() {
           <Link
             href={`/${locale}/`}
             className="text-3xl font-bold text-black 
-          flex flex-row items-center justify-center gap-1"
+          flex flex-row items-center justify-center gap-2"
           >
             <span
-              className="text-[44px] text-blue-600"
-              style={locale === "en" ? { fontFamily: "Iceberg" } : {}}
+              className={`text-[44px] text-blue-600 ${locale === "ar" && "order-2 text-[40px]"}`}
+              style={locale === "en" ? { fontFamily: "Iceberg" } : { fontFamily: "Readex Pro"}}
             >
               {header('amro97')}
             </span>
 
             <span
-              className="tracking-wide text-[44px]"
-              style={locale === "en" ? { fontFamily: "Iceberg" } : {}}
+              className={`tracking-wide text-[44px] ${locale === "ar" && "text-[32.5px"}`}
+              style={locale === "en" ? { fontFamily: "Iceberg" } : { fontFamily: "Readex Pro" }}
             >
               {header('Academy')}
             </span>
           </Link>
 
-          <ul className="hidden pl-14 align-middle xl:flex mt-[13.5px]">
-            {Navigation.map((nav, index) => (
-              <li key={index}>
-                <Link 
-                  href={`/${locale}${nav.href}`} 
-                  className={`mx-[19.5px] text-xl text-black hover:text-gray-800 active:scale-95 ${nav.style}`}
-                >
+          <ul className={`hidden pl-14 align-middle xl:flex mt-[13.5px] ${locale === 'ar' && 'px-4'}`}>
+            {Navigation.map((nav, index) => {
+              const path = `/${locale}${nav.href}`;
+
+              return (
+                <li key={index}>
+
+                  <FlayoutLink href={`/${locale}${nav.href}`} FlyoutContent={nav?.FlayOutConent} nav={nav} >
+
                   {locale === "en" ? nav.name : nav.arName}
-                </Link>
-              </li>
-            ))}
+
+                  </FlayoutLink>
+
+                </li>
+              )
+            } )}
           </ul>
 
         </div>

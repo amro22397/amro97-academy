@@ -9,6 +9,8 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Providers } from "../provider";
+import styles from "./layout.module.css"; 
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,7 +54,9 @@ export default async function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased
+        overflow-x-hidden ${locale === 'ar' && styles.arabic}`}
+        
       >
         <Providers>
         <NextIntlClientProvider messages={messages}>

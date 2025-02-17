@@ -24,6 +24,14 @@ body {
   @apply flex flex-col items-center justify-center mb-20;
 }
 
+.flyout-links {
+  @apply text-[19px] hover:underline hover:text-black/85 active:scale-95 ;
+}
+
+.flyout-links-web-fonts {
+  @apply text-[18.5px] hover:underline hover:text-black/85 active:scale-95 font-normal;
+}
+
 .video-notes {
   @apply text-gray-700 my-4 w-[80%];
 }

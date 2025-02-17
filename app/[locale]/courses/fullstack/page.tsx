@@ -32,7 +32,7 @@ const page = () => {
             href=""
             className="mx-2 text-indigo-700 hover:underline active:text-black/75"
           >
-            Click here
+            {fullstackVideosPage("Click here")}
           </Link>
         </span>
 
@@ -64,7 +64,7 @@ const page = () => {
       </Accordion>
 
 
-      
+
     </div>
   );
 };

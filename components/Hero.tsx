@@ -49,7 +49,7 @@ const Hero = () => {
           alt="Hero"
           width={1000}
           height={500}
-          className="w-[825px] h-[400px]"
+          className="w-[775px] h-[400px]"
         />
       </div>
     </div>
