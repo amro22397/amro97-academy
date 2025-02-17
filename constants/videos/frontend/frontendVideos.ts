@@ -48,6 +48,18 @@ export const frontendVideos = [
     },
 
     {
+        title: 'Stunning Portfolio with Next JS, TypeScript & Tailwind CSS!',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=MoymUF6dfs0',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Portfolio',
+    },
+
+    {
         title: "A Better Spotify 2.0 Clone Music App",
         description: '',
         notes: '',
@@ -93,16 +105,12 @@ export const frontendVideos = [
         arCategory: 'أساسي',
     },
 
-    {
-        title: 'Quiz App using React ',
-        description: '',
-        notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=UX5HIrxbRUc',
-        videoLink: '',
-        image: '',
-        category: 'additional',
-        arCategory: 'إضافي',
-    },
+    //
+    //
+    //
+    //
+    //
+    //
 
     {
         title: "Build A Advance Music Player Application with React JS | Fully Customized",
@@ -114,6 +122,17 @@ export const frontendVideos = [
         category: 'additional',
         arCategory: 'إضافي',
 
+    },
+
+    {
+        title: 'Quiz App using React ',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=UX5HIrxbRUc',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
     },
 
     {
@@ -138,6 +157,114 @@ export const frontendVideos = [
         category: 'additional',
         arCategory: 'إضافي',
         type: 'Weather app'
+    },
+
+    {
+        title: 'Portfolio Website In React JS | Complete React JS Website Project Tutorial 2024',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=FTH6Dn3AyIQ',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Portfolio',
+    },
+
+    {
+        title: 'Portfolio Website Using Next JS, Tailwind CSS & Framer Motion',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=dImgZ_AH7uA',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Portfolio',
+    },
+
+    {
+        title: 'Portfolio Website In React JS | Complete React JS Website Project Tutorial 2024',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=hkHHwA-vEyQ',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Portfolio',
+    },
+
+    {
+        title: 'Portfolio Website with Next JS , TailwindCSS and Framer Motion',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=bcPfEYfhUsc',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Portfolio',
+    },
+
+    {
+        title: 'Portfolio Website Using Next JS',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=Y2kGqbzvAn4',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Portfolio',
+    },
+
+    {
+        title: 'Portfolio Website: React.js, Next.js 14, Tailwind CSS, Shadcn UI',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=Rew98iFupBM',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Portfolio',
+    },
+
+    {
+        title: 'Portfolio Website With React JS & Tailwind CSS ',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=Hps-XPN1GeE',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Portfolio',
+    },
+
+    {
+        title: 'Responsive Portfolio Website with React, Next.js, TypeScript, and Tailwind CSS',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=6jFFkGU-ZBU',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Portfolio',
+    },
+
+    {
+        title: 'Stunning Portfolio Website with React, Tailwind CSS & Framer Motion!',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=hw4bzV9Uu7A',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Portfolio',
     },
 
     {

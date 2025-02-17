@@ -12,14 +12,14 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import { IoIosCloseCircle } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
-const VideoAndMenu = ({ videos }: { 
+const VideoAndMenu = ({ videos, search }: { 
   videos: Video[];
+  search?: string | undefined | null;
  }) => {
   const firstVideoId = videos[0]?.youtubeLink?.split("=")[1];
   console.log(firstVideoId);
 
   const [showingVideo, setShowingVideo] = useState<Video>(JSON.parse(localStorage?.getItem('showingVideo')) || videos[0] || {});
-
 
   const [videoId, setVideoId] = useState(
     localStorage.getItem("videoId") || firstVideoId
@@ -28,6 +28,21 @@ const VideoAndMenu = ({ videos }: {
   const [openLearningMode, setOpenLearningMode] = useState(false);
 
   const [videoUrl, setVideoUrl] = useState( localStorage.getItem('videoUrl') || videos[0]?.youtubeLink || '');
+
+
+
+  const filteredVideos = videos.filter((video: Video, index: number) =>
+    [video.title, video.type, video.notes, video.description].some((field: string | any) =>
+      field?.toLowerCase().includes(search?.toLowerCase() || "")
+    )
+  );
+
+
+
+
+
+
+
   const [duration, setDuration] = useState(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -101,7 +116,7 @@ const VideoAndMenu = ({ videos }: {
         onScroll={handleScroll}
         key={videos.length}
       >
-        {videos.map((video: Video, index: number) => (
+        {filteredVideos.map((video: Video, index: number) => (
           <>
             <div
               className="w-full text-center text-[16.5px] font-semibold cursor-pointer 
@@ -158,7 +173,7 @@ const VideoAndMenu = ({ videos }: {
               </div>
             </div>
 
-            {index !== videos.length - 1 && (
+            {index !== filteredVideos.length - 1 && (
               <Separator
                 className="my-2 bg-gray-400/65"
                 key={video.youtubeLink}

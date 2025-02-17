@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -8,7 +8,6 @@ import VideoAndMenu from "@/components/VideoAndMenu";
 import { useTranslations } from "next-intl";
 import VideoAndMenuDesc from "@/components/VideoAndMenuDesc";
 
-
 import {
   Accordion,
   AccordionContent,
@@ -16,26 +15,24 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { miniTutorials } from "@/constants/videos/frontend/mini-tutorials";
-
+import SearchBar from "@/components/SearchBar";
 
 const page = () => {
+  const miniTutorialsVideosPage = useTranslations("MiniTutorialsVideos");
 
-  const miniTutorialsVideosPage = useTranslations("MiniTutorialsVideos")
+  const [search, setSearch] = useState<string | undefined | null>("");
 
   return (
-
     <div className="videosPage">
-    
-    {/* <h1 className="text-black text-3xl font-semibold my-8">
+      {/* <h1 className="text-black text-3xl font-semibold my-8">
         {frontendVideosPage("Title")}
       </h1> */}
-      
-    <VideoAndMenu videos={miniTutorials} />
 
+      <SearchBar setSearch={setSearch} />
 
+      <VideoAndMenu videos={miniTutorials} search={search} />
 
-    
-    {/* <Accordion
+      {/* <Accordion
         type="single"
         collapsible
         className="bg-neutral-200/75 px-4 w-[50%]"
@@ -57,8 +54,6 @@ const page = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion> */}
-
-
     </div>
   );
 };

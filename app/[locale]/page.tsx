@@ -24,7 +24,7 @@ const page = () => {
               Learn Web Development
             </h2>
 
-            {/* <p className="mt-6 max-w-2xl text-xl font-semibold text-[#404040]">
+            <p className="mt-6 max-w-2xl text-xl font-semibold text-[#404040]">
               Lorem ipsum urna, consectetur adipiscing elit. Urna risus
               hendrerit dignissim duis fringilla sit. Lacus porttitor neque
               ipsum.
@@ -36,7 +36,7 @@ const page = () => {
             className="w-[500px] h-[375px]" />
           </div>
           
-          {/* <div className="my-20 inline-block w-full flex-col lg:mt-0 lg:hidden lg:w-2/5">
+          <div className="my-20 inline-block w-full flex-col lg:mt-0 lg:hidden lg:w-2/5">
             <img src="/images/placeholder.png" alt="image" />
           </div>
         </div> */}
@@ -50,7 +50,7 @@ const page = () => {
 
 
 
-        {/*   <div className="mx-auto">
+          <div className="mx-auto hidden">
             <div className="mx-auto px-5 py-24 lg:px-24">
               <div className="my-10 flex w-full flex-col text-center">
                 <h2 className="mb-5 text-2xl font-bold text-black lg:text-3xl">
@@ -123,7 +123,7 @@ const page = () => {
                 </a>
               </div>
             </div>
-          </div> */}
+          </div>
 
 
           <div className="text-black hidden">

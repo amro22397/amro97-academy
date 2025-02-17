@@ -16,11 +16,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SearchBar from "@/components/SearchBar";
 
 
 const page = () => {
 
   const frontendVideosPage = useTranslations("FrontendVideos")
+
+  const [search, setSearch] = useState<string | undefined | null>("");
+
+  console.log(search)
 
   return (
 
@@ -29,8 +34,10 @@ const page = () => {
     {/* <h1 className="text-black text-3xl font-semibold my-8">
         {frontendVideosPage("Title")}
       </h1> */}
+
+      <SearchBar setSearch={setSearch} />
       
-    <VideoAndMenu videos={frontendVideos} />
+    <VideoAndMenu videos={frontendVideos} search={search} />
 
 
 

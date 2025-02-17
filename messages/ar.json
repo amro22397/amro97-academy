@@ -61,13 +61,30 @@
   "VideoAndMenuDesc": {
     "Description1": "إذا قمت بمضي على الأقل حوالي 4 إلى 5 ساعات يوميا منذ (6-7) صباحا وحتى (4-5) مساءا",
     "Description2": "وأنت تطبق مشاريع من الموقع يمكنك تطبيق 2-3 ساعات من فيديوهات المشاريع على اليوتيوب كل يوم",
-    "عربي": "وأنت تطبق مشاريع من الموقع يمكنك تطبيق 2-3 ساعات من فيديوهات المشاريع على اليوتيوب كل يوم",
     "Example3": "Go to the about page",
     "Example4": "Go to the about page",
     "Example5": "Go to the about page",
     "Example6": "Go to the about page"
   },
 
+  "MiniTutorialsVideos": {
+      "Example": "Hello world!",
+      "Example2": "Go to the about page",
+      "Example3": "Go to the about page",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+    },
+
+    "AboutPage": {
+      "About Us": "نبذة عنا",
+      "AcademyEstablished": "هذا الأكاديمية أنشأت في فبراير 2025 وتهدف إلى مساعدة المطورين في تعلم عدد من مجالات السوفتوير مثل تصميم المواقع like Web Development.",
+      "عربي": "هذا الأكاديمية أنشأت في فبراير 2025 وتهدف إلى مساعدة المطورين في تعلم عدد من مجالات السوفتوير مثل تصميم المواقع",
+      "Example3": "Go to the about page",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+    },
 
   "Example": {
     "Example": "Hello world!",

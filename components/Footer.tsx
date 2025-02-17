@@ -138,7 +138,7 @@ export default function Footer() {
                   <Link href={`/${locale}${nav.href}`}
                   className={`${nav.style} text-black hover:underline active:scale-95`}
                   >
-                    {locale === "en" ? nav.name : locale === 'ar' && nav.arName}
+                    {locale === "en" ? nav.name : nav.arName}
                   </Link>
                 </li>
                 ))}

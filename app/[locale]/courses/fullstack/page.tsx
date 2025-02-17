@@ -14,9 +14,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SearchBar from "@/components/SearchBar";
 
 const page = () => {
   const fullstackVideosPage = useTranslations("FullstackVideos");
+
+  const [search, setSearch] = useState<string | undefined | null>("");
 
   return (
     <div className="videosPage">
@@ -26,19 +29,14 @@ const page = () => {
           {fullstackVideosPage("Title")}
         </h1> */}
 
-        <span className="font-semibold mb-[11.5px]">
-          {fullstackVideosPage("GetMostBenifits")}
-          <Link
-            href=""
-            className="mx-2 text-indigo-700 hover:underline active:text-black/75"
-          >
-            {fullstackVideosPage("Click here")}
-          </Link>
-        </span>
-
       </div>
 
-      <VideoAndMenu videos={fullstackVideos} />
+      <SearchBar setSearch={setSearch} />
+
+
+      <VideoAndMenu videos={fullstackVideos} search={search} />
+
+      
 
       <Accordion
         type="single"
@@ -62,6 +60,19 @@ const page = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+
+
+
+      <span className="font-semibold mb-[11.5px] mt-4">
+          {fullstackVideosPage("GetMostBenifits")}
+          <Link
+            href=""
+            className="mx-2 text-indigo-700 hover:underline active:text-black/75
+            cursor-pointer"
+          >
+            {fullstackVideosPage("Click here")}
+          </Link>
+        </span>
 
 
 

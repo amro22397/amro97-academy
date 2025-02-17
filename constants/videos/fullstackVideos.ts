@@ -86,6 +86,18 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'Next.js 14 Portfolio Website with Admin Dashboard 2024 | NEXT.JS 14 MERN STACK With MongoDB, Next Auth',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=3cE-D0qfqEI',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Portfolio'
+    },
+
+    {
         title: 'WhatsApp Clone - NextJS, React, Typescript, Prisma, Tailwind CSS - Part 1/2',
         description: '',
         notes: '',
@@ -180,6 +192,51 @@ export const fullstackVideos = [
     //     image: '',
     //     category: 'basic',
     // },
+
+    {
+        title: ' ( Jira Clone ) - Next JS, Shadcn UI, Tailwind, Clerk, NeonDB',
+        description: '',
+        notes: 'This app uses NeonDB for database if you want to use it it is fine, or you can think to implement MongoDB backend on it as you learned from other tutorials',
+        arNotes: 'هذا التطبيق يستخدم NeonDB كواجهة خلفية لقاعدة البيانات إذا كنت تريد تعلم هذا وتطبيقه لا بأس ، أويمكنك تطبيق ماتعملته من بناء الواجهة الخلفية عن طريق MongoDB عليه',
+        youtubeLink: 'https://www.youtube.com/watch?v=R5dBYINNouY',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Portfolio Builder App | NextJs, React, TailwindCss, Drizzle ORM',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=eRwIQO_VG0o',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Build Your Own Podcasts Streaming App',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=1UBHU_Zqy4k',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Spotify Clone with React JS and Styled Components',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=ajVcLGEw8Xw',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
 
     {
         title: 'Telegram Clone 1.0 (Next.js, React, Tailwind CSS, Firebase, Vercel Deployment)',
@@ -298,32 +355,33 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'SaaS ScrapeFlow: NextJs course with React, Typescript , React-Flow, Prisma, ReactQuery',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=RkwbGuL-dzo',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Portfolio Website with Admin panel | Tailwind CSS, Framer Motion , MongoDB 2023',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=gLe4MSXM7No',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Portfolio'
+    },
+
+    {
         title: 'Task Manager Coding Project Tutorial',
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=OHvfgaDl-yY',
-        videoLink: '',
-        image: '',
-        category: 'additional',
-        arCategory: 'إضافي',
-    },
-
-    {
-        title: 'Build Your Own Podcasts Streaming App',
-        description: '',
-        notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=1UBHU_Zqy4k',
-        videoLink: '',
-        image: '',
-        category: 'additional',
-        arCategory: 'إضافي',
-    },
-
-    {
-        title: 'Spotify Clone with React JS and Styled Components',
-        description: '',
-        notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=ajVcLGEw8Xw',
         videoLink: '',
         image: '',
         category: 'additional',
@@ -351,6 +409,41 @@ export const fullstackVideos = [
         image: '',
         category: 'additional',
         arCategory: 'إضافي',
+    },
+
+    {
+        title: 'UI Components Builder App Using, React, Next Js, Mongo DB, Tailwind CSS',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=fth5uiRSCfI',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Blog App Using Next JS & MongoDB | Backend, Frontend and Admin Project',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=HdWCh_4XE1Q',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Blog App',
+    },
+
+    {
+        title: 'Blog App Tutorial | Next.js MongoDB',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=DpYE5zPDRVQ',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Blog App',
     },
 
     {
@@ -498,10 +591,32 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'Next.js Application | React, Next JS, TypeScript, Tailwind CSS',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=986hztrfaSQ',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
         title: 'Weather Application',
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=rscl9VwwnQg',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'AI Form Builder Tutorial with Next JS, TypeScript, Drizzle ORM, React, OpenAI, Stripe',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=zzWypOl4JkY',
         videoLink: '',
         image: '',
         category: 'additional',
@@ -617,6 +732,17 @@ export const fullstackVideos = [
     //     category: 'additional',
     // arCategory: 'إضافي',
     // },
+
+    {
+        title: 'Next.js, TypeScript, and AWS Course – Code a Quote Generator',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=FRmCxj9K7II',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
 
     {
         title: 'Realtime Next.js App with Permissions and Notifications | TypeScript, Tailwind',
