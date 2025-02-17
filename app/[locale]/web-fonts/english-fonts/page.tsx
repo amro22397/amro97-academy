@@ -67,7 +67,7 @@ Go to english fonts
 
         <div className="flex flex-wrap gap-[68px] mt-[6px]">
           {englishFonts.map((font, index) => (
-            <div key={index} className="flex flex-col gap-2">
+            <div key={font.phontName} className="flex flex-col gap-2">
               <h1
                 className="text-3xl"
                 style={{ fontFamily: `${font.phontName}` }}

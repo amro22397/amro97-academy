@@ -20,13 +20,13 @@ const page = () => {
 
   return (
     <div className="videosPage">
-      <div className="flex flex-col items-center justify-center gap-3 my-[32.25px]">
+      <div className="flex flex-col items-center justify-center gap-3">
 
-        <h1 className="text-black text-3xl font-semibold">
+        {/* <h1 className="text-black text-3xl font-semibold">
           {fullstackVideosPage("Title")}
-        </h1>
+        </h1> */}
 
-        <span className="font-semibold">
+        <span className="font-semibold mb-[11.5px]">
           {fullstackVideosPage("GetMostBenifits")}
           <Link
             href=""
@@ -46,7 +46,7 @@ const page = () => {
         className="bg-neutral-200/75 px-4 w-[50%]"
       >
         <AccordionItem value="item-1">
-          <AccordionTrigger>
+          <AccordionTrigger className="accordion-trigger">
             {fullstackVideosPage("GuideForApplying")}
           </AccordionTrigger>
           <AccordionContent>

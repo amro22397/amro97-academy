@@ -10,6 +10,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Providers } from "../provider";
 import styles from "./layout.module.css"; 
+import AppContextProvider from "@/context/AppContext";
 
 
 const geistSans = Geist({
@@ -58,6 +59,8 @@ export default async function RootLayout({
         overflow-x-hidden ${locale === 'ar' && styles.arabic}`}
         
       >
+        <AppContextProvider>
+
         <Providers>
         <NextIntlClientProvider messages={messages}>
               <Header />
@@ -67,6 +70,9 @@ export default async function RootLayout({
           <Footer />
         </NextIntlClientProvider>
         </Providers>
+
+        </AppContextProvider>
+        
       </body>
     </html>
   );

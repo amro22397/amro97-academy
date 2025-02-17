@@ -45,7 +45,7 @@ const CodeBlock = ({
             <div className="flex flex-col">
             {code.split('\n').map((line: string, index: number) => (
                 <code className="text-sm break-words whitespace-normal"
-                key={index}>{line}</code>
+                key={line.split(' ')[3]}>{line}</code>
             ))}
             </div>
           

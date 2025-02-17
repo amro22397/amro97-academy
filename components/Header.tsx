@@ -71,7 +71,7 @@ export default function Header() {
               const path = `/${locale}${nav.href}`;
 
               return (
-                <li key={index}>
+                <li key={nav.name}>
 
                   <FlayoutLink href={`/${locale}${nav.href}`} FlyoutContent={nav?.FlayOutConent} nav={nav} >
 

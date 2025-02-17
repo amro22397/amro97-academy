@@ -24,11 +24,11 @@ const FlayoutLink = ({
 
   const pathname = usePathname();
 
-  const { open
-    , setOpen } = useContext(AppContext) as AppContextType;
+//   const { open
+//     , setOpen } = useContext(AppContext) as AppContextType;
 
 
-//   const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const showFlyout = open && FlyoutContent;
 

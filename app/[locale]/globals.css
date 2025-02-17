@@ -32,6 +32,10 @@ body {
   @apply text-[18.5px] hover:underline hover:text-black/85 active:scale-95 font-normal;
 }
 
+.accordion-trigger {
+  @apply text-[18.25px] tracking-wide;
+}
+
 .video-notes {
   @apply text-gray-700 my-4 w-[80%];
 }

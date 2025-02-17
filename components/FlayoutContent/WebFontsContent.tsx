@@ -5,24 +5,38 @@ import React from "react";
 const WebFontsContent = () => {
   const locale = useLocale();
 
+  const webFontsContentLinks = [
+    {
+      name: "English Fonts",
+      arName: "الخطوط الإنجليزية",
+      href: "/web-fonts/english-fonts",
+      style: "",
+    },
+
+    {
+      name: "Arabic Fonts",
+      arName: "الخطوط العربية",
+      href: "/web-fonts/arabic-fonts",
+      style: "",
+    },
+  ];
+
   return (
     <div
       className="w-64 bg-white p-6 shadow-xl
     flex flex-col justify-center items-center gap-2 rounded-m"
     >
-      <Link
-        href={`/${locale}/courses/frontend`}
-        className="flyout-links-web-fonts"
-      >
-        English Fonts
-      </Link>
-
-      <Link
-        href={`/${locale}/courses/fullstack`}
-        className="flyout-links-web-fonts"
-      >
-        Arabic Fonts
-      </Link>
+      {webFontsContentLinks.map((link, index) => {
+        return (
+          <Link
+            href={`/${locale}${link.href}`}
+            className={`flyout-links-web-fonts ${link.style}`}
+            //   onClick={() => setOpen(false)}
+          >
+            {locale === "en" ? link.name : link.arName}
+          </Link>
+        );
+      })}
     </div>
   );
 };

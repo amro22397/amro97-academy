@@ -22,7 +22,6 @@ const CoursesContent = () => {
       },
   ];
 
-    const { open, setOpen } = useContext(AppContext) as AppContextType;
   
 
   return (
@@ -33,7 +32,7 @@ const CoursesContent = () => {
       {CoursesContentLinks.map((link, index) => {
         return (
           <Link href={`/${locale}${link.href}`} className={`flyout-links ${link.style}`}
-          onClick={() => setOpen(false)}
+        //   onClick={() => setOpen(false)}
           >
             {locale === "en" ? link.name : link.arName}
           </Link>

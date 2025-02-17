@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { frontendVideos } from "@/constants/videos/frontend/frontendVideos";
-import './page.css'
 import VideoAndMenu from "@/components/VideoAndMenu";
 import { useTranslations } from "next-intl";
 import VideoAndMenuDesc from "@/components/VideoAndMenuDesc";
@@ -16,11 +15,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { miniTutorials } from "@/constants/videos/frontend/mini-tutorials";
 
 
 const page = () => {
 
-  const frontendVideosPage = useTranslations("FrontendVideos")
+  const miniTutorialsVideosPage = useTranslations("MiniTutorialsVideos")
 
   return (
 
@@ -30,18 +30,18 @@ const page = () => {
         {frontendVideosPage("Title")}
       </h1> */}
       
-    <VideoAndMenu videos={frontendVideos} />
+    <VideoAndMenu videos={miniTutorials} />
 
 
 
     
-    <Accordion
+    {/* <Accordion
         type="single"
         collapsible
         className="bg-neutral-200/75 px-4 w-[50%]"
       >
         <AccordionItem value="item-1">
-          <AccordionTrigger className="accordion-trigger">
+          <AccordionTrigger className="text-[18.25px] tracking-wide">
             {frontendVideosPage("GuideForApplying")}
           </AccordionTrigger>
           <AccordionContent>
@@ -56,7 +56,7 @@ const page = () => {
             </div>
           </AccordionContent>
         </AccordionItem>
-      </Accordion>
+      </Accordion> */}
 
 
     </div>
