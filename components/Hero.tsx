@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div
       className="flex flex-row items-center
-    justify-center gap-20 mb-10"
+    justify-center gap-20 mb-10" 
     >
         {/* <h2
           className="lg:text-5xl text-3xl font-bold leading-none text-black inline-block

@@ -16,7 +16,7 @@ body {
 }
 
 .heroButtonLearn {
-  @apply py-11 px-9 
+  @apply py-11 w-[560px]
   transition-all duration-100 text-xl flex flex-col gap-1;
 }
 
@@ -32,12 +32,15 @@ body {
   @apply text-[18.5px] hover:underline hover:text-black/85 active:scale-95 font-normal;
 }
 
+.accordion {
+  @apply bg-neutral-200/90 px-4 w-[50%] mb-9;
+}
 .accordion-trigger {
   @apply text-[18.25px] tracking-wide;
 }
 
 .video-notes {
-  @apply text-gray-700 my-4 w-[80%];
+  @apply text-gray-700 w-[80%];
 }
 
 .font-page {

@@ -31,17 +31,11 @@ const page = () => {
 
       </div>
 
-      <SearchBar setSearch={setSearch} />
-
-
-      <VideoAndMenu videos={fullstackVideos} search={search} />
-
-      
 
       <Accordion
         type="single"
         collapsible
-        className="bg-neutral-200/75 px-4 w-[50%]"
+        className="accordion"
       >
         <AccordionItem value="item-1">
           <AccordionTrigger className="accordion-trigger">
@@ -62,8 +56,14 @@ const page = () => {
       </Accordion>
 
 
+      <VideoAndMenu videos={fullstackVideos} search={search} />
 
-      <span className="font-semibold mb-[11.5px] mt-4">
+
+      <SearchBar setSearch={setSearch} />
+
+
+
+      <span className="font-semibold mb-[11.5px]">
           {fullstackVideosPage("GetMostBenifits")}
           <Link
             href=""
@@ -73,6 +73,9 @@ const page = () => {
             {fullstackVideosPage("Click here")}
           </Link>
         </span>
+
+
+      
 
 
 

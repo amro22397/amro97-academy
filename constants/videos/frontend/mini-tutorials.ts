@@ -25,6 +25,58 @@ export const miniTutorials = [
     },
 
     {
+        title: 'Image Gallery in NextJs Using SwiperJs',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=imhdh4xCh7I',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Swipe between images',
+
+    },
+
+    {
+        title: 'swiper in Nextjs 14 using SwiperJs & Tailwindcss',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=Ks6l9eVgxRI',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Swipe between images',
+
+    },
+
+    {
+        title: 'React+Next.js Image Gallery Slider with SwiperJS ',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=g4UbnZxJ7Kw',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Swipe between images',
+
+    },
+
+    {
+        title: 'SwiperJS. React swiper js. ',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=KL_yIf5uiJo',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+        type: 'Swipe between images',
+
+    },
+
+    {
         title: 'dropdown navigation menu',
         description: '',
         notes: '',

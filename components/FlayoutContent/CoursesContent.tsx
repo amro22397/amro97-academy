@@ -32,6 +32,7 @@ const CoursesContent = () => {
       {CoursesContentLinks.map((link, index) => {
         return (
           <Link href={`/${locale}${link.href}`} className={`flyout-links ${link.style}`}
+          key={link.name}
         //   onClick={() => setOpen(false)}
           >
             {locale === "en" ? link.name : link.arName}

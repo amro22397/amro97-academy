@@ -35,17 +35,12 @@ const page = () => {
         {frontendVideosPage("Title")}
       </h1> */}
 
-      <SearchBar setSearch={setSearch} />
-      
-    <VideoAndMenu videos={frontendVideos} search={search} />
 
 
-
-    
-    <Accordion
+      <Accordion
         type="single"
         collapsible
-        className="bg-neutral-200/75 px-4 w-[50%]"
+        className="accordion"
       >
         <AccordionItem value="item-1">
           <AccordionTrigger className="accordion-trigger">
@@ -64,6 +59,17 @@ const page = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+
+
+
+      
+    <VideoAndMenu videos={frontendVideos} search={search} />
+
+
+
+    <SearchBar setSearch={setSearch} />
+
+    
 
 
     </div>

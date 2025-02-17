@@ -31,6 +31,7 @@
 
     "VideoAndMenu": {
       "Learning mode": "Learning mode",
+      "ApplyWithLearningHow": "How to apply projects with learning mode ?",
       "Example2": "Go to the about page",
       "Example3": "Go to the about page",
       "Example4": "Go to the about page",
@@ -40,7 +41,7 @@
 
     "FrontendVideos": {
       "Title": "Learn Frontend Development with Projects",
-      "ApplyAtLeast": "If you apply at least 5-6 frontend projects you will be able to do most things that you want if you want to make real projects.",
+      "ApplyAtLeast": "If you apply at least 5-6 good frontend projects you will be able to do most things that you want if you want to make real projects.",
       "GuideForApplying": "Guide for applying Frontend Projects",
       "Example5": "Go to the about page",
       "Example6": "Go to the about page"
@@ -61,7 +62,7 @@
     "VideoAndMenuDesc": {
       "Description1": "If you spend at least about 4 to 5 hours every day from (6-7 am) until (4-5 pm)",
       "Description2": "applying from projects you can finish applying about 2-3 hours from the youtube projects each day.",
-      "Example3": "Go to the about page",
+      "ApplyWithLearningHow": "How to apply projects with learning mode ?",
       "Example4": "Go to the about page",
       "Example5": "Go to the about page",
       "Example6": "Go to the about page"

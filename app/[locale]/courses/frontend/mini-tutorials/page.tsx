@@ -28,9 +28,12 @@ const page = () => {
         {frontendVideosPage("Title")}
       </h1> */}
 
-      <SearchBar setSearch={setSearch} />
+
 
       <VideoAndMenu videos={miniTutorials} search={search} />
+
+
+      <SearchBar setSearch={setSearch} />
 
       {/* <Accordion
         type="single"

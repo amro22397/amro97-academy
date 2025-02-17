@@ -31,6 +31,7 @@ const WebFontsContent = () => {
           <Link
             href={`/${locale}${link.href}`}
             className={`flyout-links-web-fonts ${link.style}`}
+            key={link.name}
             //   onClick={() => setOpen(false)}
           >
             {locale === "en" ? link.name : link.arName}

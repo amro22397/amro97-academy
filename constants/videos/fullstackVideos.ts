@@ -35,6 +35,7 @@ export const fullstackVideos = [
         image: '',
         category: 'basic',
         arCategory: 'أساسي',
+        type: 'E-commerce',
     },
 
     {
@@ -466,6 +467,7 @@ export const fullstackVideos = [
         image: '',
         category: 'additional',
         arCategory: 'إضافي',
+        type: 'E-commerce',
     },
 
     {
@@ -477,6 +479,7 @@ export const fullstackVideos = [
         image: '',
         category: 'additional',
         arCategory: 'إضافي',
+        type: 'E-commerce',
     },
 
     {
@@ -566,6 +569,19 @@ export const fullstackVideos = [
         image: '',
         category: 'additional',
         arCategory: 'إضافي',
+        type: 'E-commerce',
+    },
+
+    {
+        title: 'Next.js 14 E-Commerce Website with Stripe, and Sanity.io',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=UnwmPuPdhFc',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'E-commerce',
     },
 
     {

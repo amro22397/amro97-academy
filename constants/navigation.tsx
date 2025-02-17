@@ -20,7 +20,7 @@ export const Navigation = [
     {
         name: 'Courses',
         arName: 'الكورسات',
-        href: '',
+        href: '/courses/frontend',
         style: '',
         FlayOutConent: <CoursesContent />,
         noCourserPointer: true,
@@ -34,6 +34,14 @@ export const Navigation = [
         FlayOutConent: <WebFontsContent />,
         noCourserPointer: true,
     },
+
+    {
+        name: 'Contact us',
+        arName: 'تواصل معنا',
+        href: '/contact-us',
+        style: '',
+    },
+
     {
         name: 'About us',
         arName: 'نبذة عنا',
