@@ -85,10 +85,6 @@ export function LoginForm({
     const iconClass = `absolute right-4 top-2 text-gray-500 cursor-pointer`
 
 
-    const session = useSession();
-    console.log(session)
-
-
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>

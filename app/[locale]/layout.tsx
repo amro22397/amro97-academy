@@ -15,6 +15,8 @@ import { ProvidersNextUi } from "./provider";
 import AppProvider from "@/components/AppContext";
 import { getUser } from "@/actions/getUser";
 import EmailIsNotVerified from '@/components/EmailIsNotVerified';
+import { Toaster } from "@/components/ui/toaster"
+
 
 
 
@@ -79,6 +81,7 @@ export default async function RootLayout({
               <Header email={session?.user?.email} session={session} />
           
           {children}
+          <Toaster />
 
           <Footer />
         </NextIntlClientProvider>

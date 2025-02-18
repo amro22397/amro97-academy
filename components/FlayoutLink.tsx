@@ -39,11 +39,11 @@ const FlayoutLink = ({
   return (
     <Link
       href={!nav.noCourserPointer ? href : '#'}
-      className={`relative mx-[19.5px] text-black hover:text-gray-800 active:scale-95 ${
+      className={`relative text-black hover:text-gray-800 active:scale-95 ${
         nav.style
       } ${pathname === path && path !== `/${locale}/courses/frontend` && "font-bold hover:text-black/90"}
       ${nav?.noCourserPointer && "cursor-default"}
-      ${locale === 'ar' ? 'text-[17px]' : 'text-xl'}`}
+      ${locale === 'ar' ? 'text-[17px] mx-[16.25px]' : 'text-xl mx-[19.5px]'}`}
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
