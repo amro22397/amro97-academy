@@ -27,6 +27,8 @@ const page = () => {
 
   console.log(search)
 
+  const jFrontendVideos = JSON.parse(JSON.stringify(frontendVideos))
+
   return (
 
     <div className="videosPage">
@@ -63,7 +65,7 @@ const page = () => {
 
 
       
-    <VideoAndMenu videos={frontendVideos} search={search} />
+    <VideoAndMenu videos={jFrontendVideos} search={search} />
 
 
 

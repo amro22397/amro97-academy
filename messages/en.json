@@ -8,7 +8,13 @@
       "amro97": "amro97",
       "Academy": "Academy",
       "Contact Us": "Contact Us",
-      "Log In": "Log In"
+      "Log In": "Log In",
+      "Log Out": "Log Out",
+      "Example3": "Go to the about page",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+      
     },
 
     "Hero" : {
@@ -57,6 +63,15 @@
       "Example9": "Go to the about page",
       "Example0": "Go to the about page"
 
+    },
+
+    "SingleVideoPage": {
+      "Full Page Screen": "Full-Page Screen",
+      "AcademyEstablished": "This academy has established in February 2025 and it aims to helps developers learning many software fields like Web Development.",
+      "Example3": "Go to the about page",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
     },
 
     "VideoAndMenuDesc": {

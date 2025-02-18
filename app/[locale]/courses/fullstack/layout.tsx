@@ -4,8 +4,8 @@ import React from 'react'
 
 
 export const metadata = {
-    title: "Frontend Projects",
-    description: "Frontend Projects",
+    title: "Fullstack Projects",
+    description: "Fullstack Projects",
   };
 
 const layout = ({ children }: { children: React.ReactNode }) => {

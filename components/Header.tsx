@@ -16,13 +16,21 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { signOut } from "next-auth/react";
 
-export default function Header() {
+export default function Header({ email, session }: {
+  email: string | undefined | null,
+  session: any,
+}) {
+
+  console.log(session);
+
+  
   const locale = useLocale();
 
   const header = useTranslations("Header");
 
-  const pathname = usePathname();
+  const pathname = usePathname() as string;
   const router = useRouter();
 
   console.log(pathname.split(locale)[1]);
@@ -55,6 +63,10 @@ export default function Header() {
       router.push(`/ar${path}`)
     }
   }
+
+
+
+  console.log(email)
 
   return (
     <>
@@ -151,16 +163,32 @@ export default function Header() {
             {header("Contact Us")}
           </Link> */}
 
-          <Link
+          {!email && (
+            <Link
             className="bg-green-500 inline-flex items-center px-8 py-3
               hover:bg-green-500/95 active:bg-green-600
                text-lg font-semibold tracking-tighter text-white
                mx-[3px]
               "
-            href="/"
+            href={`/${locale}/login`}
           >
             {header("Log In")}
           </Link>
+          )}
+
+          {email && (
+            <Link
+            className="bg-red-500 inline-flex items-center px-8 py-3
+              hover:bg-red-500/95 active:bg-red-600
+               text-lg font-semibold tracking-tighter text-white
+               mx-[3px]
+              "
+            href={`#`}
+            onClick={() => signOut({callbackUrl: `/${locale}/login`})}
+          >
+            {header("Log Out")}
+          </Link>
+          )}
 
           <ThemeSwitch />
 

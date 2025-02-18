@@ -206,7 +206,8 @@ const VideoAndMenu = ({
 
           <div className="flex flex-row justify-between items-center w-full">
             <Link
-              href={""}
+              href={`/${locale}/single-video?videoId=lH-5-oN7Ouo`}
+              target="_blank"
               className="mx-[7.5px] text-black hover:underline active:text-black/85
           cursor-pointer"
             >

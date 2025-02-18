@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "./page.css";
 import VideoAndMenu from "@/components/VideoAndMenu";
 import { fullstackVideos } from "@/constants/videos/fullstackVideos";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import VideoAndMenuDesc from "@/components/VideoAndMenuDesc";
 
@@ -21,6 +21,8 @@ const page = () => {
 
   const [search, setSearch] = useState<string | undefined | null>("");
 
+  const locale = useLocale();
+
   return (
     <div className="videosPage">
       <div className="flex flex-col items-center justify-center gap-3">
@@ -30,6 +32,7 @@ const page = () => {
         </h1> */}
 
       </div>
+
 
 
       <Accordion
@@ -49,6 +52,22 @@ const page = () => {
               >
                 <VideoAndMenuDesc />
                 <span className="">{fullstackVideosPage("ApplyAtLeast")}</span>
+
+                
+
+                <span className="font-semibold mt-4">
+          {fullstackVideosPage("GetMostBenifits")}
+          <Link
+            href={`/${locale}/single-video?videoId=sCL3dzsQuZ4`}
+            target="_blank"
+            className="mx-2 text-indigo-700 hover:underline active:text-black/75
+            cursor-pointer"
+          >
+            {fullstackVideosPage("Click here")}
+          </Link>
+        </span>
+
+
               </p>
             </div>
           </AccordionContent>
@@ -60,19 +79,6 @@ const page = () => {
 
 
       <SearchBar setSearch={setSearch} />
-
-
-
-      <span className="font-semibold mb-[11.5px]">
-          {fullstackVideosPage("GetMostBenifits")}
-          <Link
-            href=""
-            className="mx-2 text-indigo-700 hover:underline active:text-black/75
-            cursor-pointer"
-          >
-            {fullstackVideosPage("Click here")}
-          </Link>
-        </span>
 
 
       

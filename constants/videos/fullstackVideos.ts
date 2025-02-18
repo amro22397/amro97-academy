@@ -424,6 +424,18 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'Next.js 14 Blog App with Admin Dashboard 2024 | MongoDB, Next Auth',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=onzC5q4uO34',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Blog App',
+    },
+
+    {
         title: 'Blog App Using Next JS & MongoDB | Backend, Frontend and Admin Project',
         description: '',
         notes: '',
@@ -445,6 +457,17 @@ export const fullstackVideos = [
         category: 'additional',
         arCategory: 'إضافي',
         type: 'Blog App',
+    },
+
+    {
+        title: 'Full-Stack Website with Next.js 13 | Typescript, Prisma, Cloudinary, Tailwind',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=g7rE5exVQRk',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
     },
 
     {

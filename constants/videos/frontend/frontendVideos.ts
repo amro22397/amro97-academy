@@ -136,6 +136,28 @@ export const frontendVideos = [
     },
 
     {
+        title: 'Build a Modern AI Chatbot in Next.js 14 (2024)',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=Ka8GoIUhM3g',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'AI YouTube Shorts Video Generator with Next.js, React, Tailwind CSS, Convex',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=uBgFPmieR6M',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
         title: "Weather App Using React JS ",
         description: '',
         notes: '',
@@ -268,6 +290,18 @@ export const frontendVideos = [
     },
 
     {
+        title: 'E-Commerce App Using Next.js',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=nxK_TCt2pKw',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+
+    },
+
+    {
         title: 'React Chat App Full Tutorial 2024 ',
         description: '',
         notes: '',
@@ -368,6 +402,18 @@ export const frontendVideos = [
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=_v3lwP8UEwY',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+
+    },
+
+    {
+        title: 'Markdown blog using Next.js, Shadcn UI, Rehype and Tailwind CSS',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=OAVOl-aSOJc',
         videoLink: '',
         image: '',
         category: 'additional',

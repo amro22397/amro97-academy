@@ -4,8 +4,22 @@ import Layout from "../../components/Layout.js";
 import Footer from "../../components/Footer.js";
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import { getUser } from "@/actions/getUser";
+import { redirect } from "next/navigation";
+import { getLocale } from "next-intl/server";
 
-const page = () => {
+const page = async () => {
+
+  const user = await getUser();
+  const locale = await getLocale();
+
+  console.log(user)
+ 
+  
+   if (!user?.user?.email) {
+     redirect(`/${locale}/login`);
+   }
+
   return (
     <>
     {/* <Head>
