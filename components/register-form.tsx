@@ -226,6 +226,7 @@ export function RegisterForm({
           variant: "destructive",
           title: `${res.data.message}`,
         });
+        setLoading(false);
       }
 
       if (res.data.success) {
