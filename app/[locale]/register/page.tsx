@@ -1,20 +1,23 @@
 
-import { getSession } from "@/actions/getUser";
+import { getSession, getUser } from "@/actions/getUser";
 import { RegisterForm } from "@/components/register-form"
+import { getLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
 // import { useSession } from "next-auth/react"
 // import { useRouter } from "next/navigation";
 // import { useEffect } from "react";
 
 export default async function Page() {
-  const session = await getSession();
 
-  console.log(session);
-
-
-    if (session?.user?.email) {
-      redirect('/');
-    }
+  const session = await getUser();
+  const locale = await getLocale();
+    
+      console.log(session);
+    
+    
+        if (session?.user?.email) {
+          redirect(`/${locale}/`);
+        }
 
 
 

@@ -1,5 +1,6 @@
-import { getSession } from "@/actions/getUser";
+import { getSession, getUser } from "@/actions/getUser";
 import ForgetForm from "@/components/ForgetForm";
+import { getLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
 import React from "react";
 
@@ -7,14 +8,15 @@ const page = async () => {
 
     
 
-    const session = await getSession();
-      
-        console.log(session);
-      
-      
-          if (session?.user?.email) {
-            redirect('/');
-          }
+    const session = await getUser();
+    const locale = await getLocale();
+        
+          console.log(session);
+        
+        
+            if (session?.user?.email) {
+              redirect(`/${locale}/`);
+            }
         
 
   return (

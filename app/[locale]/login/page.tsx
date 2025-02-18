@@ -1,16 +1,19 @@
 import { getSession, getUser } from "@/actions/getUser";
 import { LoginForm } from "@/components/login-form"
+import { getLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
 
 export default async function Page() {
 
   const session = await getUser();
+  const locale = await getLocale();
+
   
     console.log(session);
   
   
       if (session?.user?.email) {
-        redirect('/');
+        redirect(`/${locale}/`);
       }
 
   return (

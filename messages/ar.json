@@ -60,6 +60,15 @@
 
   },
 
+  "SingleVideoPage": {
+      "Full Page Screen": "وضع الصفحة الكاملة",
+      "AcademyEstablished": "This academy has established in February 2025 and it aims to helps developers learning many software fields like Web Development.",
+      "Example3": "Go to the about page",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+    },
+
   "VideoAndMenuDesc": {
     "Description1": "إذا قمت بمضي على الأقل حوالي 4 إلى 5 ساعات يوميا منذ (6-7) صباحا وحتى (4-5) مساءا",
     "Description2": "وأنت تطبق مشاريع من الموقع يمكنك تطبيق 2-3 ساعات من فيديوهات المشاريع على اليوتيوب كل يوم",
