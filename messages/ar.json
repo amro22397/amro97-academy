@@ -113,6 +113,15 @@
       "Message sent successfully": "تم الإرسال بنجاح!"
     },
 
+    "WorkAsDeveloperPage": {
+      "HowToWorkAsDeveloper": "كيف تحصل على عمل أو خبرة عملية في البرمجة؟",
+      "To have a job": "لتحصل على عمل",
+      "To make an experience": "لتكون خبرة عملية",
+      "Example4": "Go to the about page",
+      "Example5": "Go to the about page",
+      "Example6": "Go to the about page"
+    },
+
   "Example": {
     "Example": "Hello world!",
     "Example2": "Go to the about page",

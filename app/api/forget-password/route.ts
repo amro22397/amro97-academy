@@ -43,7 +43,10 @@ export async function POST(req: Request) {
         sgMail
         .send(msg)
         .then(() => {
-            return Response.json("Reset password email was sent");
+            return Response.json({
+                message: "Reset password email was sent",
+                success: true,
+            });
         })
         .catch(async (error) => {
             await User.updateOne({ email: email }, { $set: {
@@ -51,8 +54,9 @@ export async function POST(req: Request) {
                 resetPasswordExpires: null,
             }})
 
-            return Response.json("Failed sending email. Try again", {
-                status: 400,
+            return Response.json({
+                message: "Failed sending email. Try again",
+                success: false,
             });
         });
 
@@ -67,7 +71,10 @@ export async function POST(req: Request) {
                 success: true,
         }) */
 
-                return Response.json(true)
+                return Response.json({
+                    message: "Reset password email was sent",
+                    success: true,
+                })
 
     } catch (error) {
         return Response.json({

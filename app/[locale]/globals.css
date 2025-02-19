@@ -25,11 +25,15 @@ body {
 }
 
 .flyout-links {
-  @apply text-[19px] hover:underline hover:text-black/85 active:scale-95 ;
+  @apply text-[18px] hover:underline hover:text-black/85 active:scale-95 tracking-wide;
 }
 
 .flyout-links-web-fonts {
   @apply text-[18.5px] hover:underline hover:text-black/85 active:scale-95 font-normal;
+}
+
+.work-as-developer-desc {
+  @apply text-[16px];
 }
 
 .accordion {
@@ -37,6 +41,22 @@ body {
 }
 .accordion-trigger {
   @apply text-[18.25px] tracking-wide;
+}
+
+.accordion-work-as-developer {
+  @apply w-[700px] bg-gray-200/80 px-5 mx-auto;
+}
+
+.accordion-trigger-work-as-developer {
+  @apply  hover:no-underline hover:text-black/85;
+}
+
+.accordion-trigger-work-as-developer-h2 {
+  @apply text-[21.5px] tracking-wide;
+}
+
+.accordion-title {
+  @apply text-center text-xl tracking-wide -mb-4;
 }
 
 .video-notes {
