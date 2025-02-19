@@ -97,6 +97,22 @@
       "Example6": "Go to the about page"
     },
 
+    "ContactPage": {
+      "Let's work together": "هل لديك سؤال أو ملاحظة؟",
+      "fillTheForm": "إملأ الفورم وإرسله لطلب بناء موقعك..",
+      "p-Your Name": "الإسم",
+      "p-Email address": "البريد الإلكتروني",
+      "p-Phone number": "رقم الهاتف",
+      "p-Whatsapp number": "رقم الواتساب",
+      "Frontend Development": "تصميم الواجهة الأمامية (Frontend)",
+      "Backend Development": "تصميم الواجهة الخلفية (Backend)",
+      "Full Stack Development": "تصميم الواجهة الكاملة (Fullstack)",
+      "p-textAreaMessage": "الرسالة...",
+      "Sending": "جاري الإرسال...",
+      "Send message": "أرسل الرسالة",
+      "Message sent successfully": "تم الإرسال بنجاح!"
+    },
+
   "Example": {
     "Example": "Hello world!",
     "Example2": "Go to the about page",

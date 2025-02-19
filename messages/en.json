@@ -101,6 +101,22 @@
       "Example6": "Go to the about page"
     },
 
+    "ContactPage": {
+      "Let's work together": "Do you have a question or a feedback?",
+      "fillTheForm": "Fill the form and send it to request building your website...",
+      "p-Your Name": "Your Name",
+      "p-Email address": "Email address",
+      "p-Phone number": "Phone number",
+      "p-Whatsapp number": "Whatsapp number",
+      "Frontend Development": "Frontend Development",
+      "Backend Development": "Backend Development",
+      "Full Stack Development": "Full Stack Development",
+      "p-textAreaMessage": "Your message...",
+      "Sending": "Sending...",
+      "Send message": "Send message",
+      "Message sent successfully": "Message sent successfully!"
+    },
+
 
     "Example": {
       "Example": "Hello world!",
