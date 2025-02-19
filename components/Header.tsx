@@ -9,6 +9,8 @@ import ThemeSwitch from "./ThemeSwitch";
 import { usePathname, useRouter } from "next/navigation";
 import FlayoutLink from "./FlayoutLink";
 
+import { FiMenu } from "react-icons/fi";
+
 import {
   Select,
   SelectContent,
@@ -17,15 +19,25 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { signOut } from "next-auth/react";
+import ArabicEnglishSelect from "./ArabicEnglishSelect";
+import { useState } from "react";
+import { IoClose } from "react-icons/io5";
+import LogIn from "./Authentication/LogIn";
+import LogOut from "./Authentication/LogOut";
+import CoursesContent from "./FlayoutContent/CoursesContent";
+import WebFontsContent from "./FlayoutContent/WebFontsContent";
 
-export default function Header({ email, session }: {
-  email: string | undefined | null,
-  session: any,
+export default function Header({
+  email,
+  session,
+}: {
+  email: string | undefined | null;
+  session: any;
 }) {
+  const [openMobileNav, setOpenMobileNav] = useState(false);
+  const [openCoursesMobileNav, setOpenCoursesMobileNav] = useState(false);
+  const [openWebFontsMobileNav, setOpenWebFontsMobileNav] = useState(false);
 
-  console.log(session);
-
-  
   const locale = useLocale();
 
   const header = useTranslations("Header");
@@ -35,38 +47,7 @@ export default function Header({ email, session }: {
 
   console.log(pathname.split(locale)[1]);
 
-  let path = pathname.split(locale)[1];
-
-  if (pathname.includes('frontend') && locale === "en") {
-    console.log(`${path}${locale}${pathname.split(locale)[2]}`);
-    path = `${path}${locale}${pathname.split(locale)[2]}`;
-  }
-
-  if (pathname.includes('arabic') && locale === "ar") {
-    console.log(`${path}${locale}${pathname.split(locale)[2]}`)
-    path = `${path}${locale}${pathname.split(locale)[2]}`
-  }
-
-  if (pathname.includes('english') && locale === "en") {
-    console.log(`${path}${locale}${pathname.split(locale)[2]}`)
-    path = `${path}${locale}${pathname.split(locale)[2]}`
-  }
-
-
-  const handleSelectChange = () => {
-    
-    if (locale === "ar") {
-      router.push(`/en${path}`);
-    }
-    
-    if (locale === "en") {
-      router.push(`/ar${path}`)
-    }
-  }
-
-
-
-  console.log(email)
+  console.log(email);
 
   return (
     <>
@@ -91,17 +72,17 @@ export default function Header({ email, session }: {
       </div> */}
 
       <div
-        className="grotesk mt-0 mb-16 flex items-center justify-between pt-[10.5px] pb-[12px] px-4 sm:mx-0 sm:mb-20 sm:px-0 md:px-14
-      w-full z-30 bg-white border-b border-solid border-gray-300/80"
+        className="grotesk mt-0 mb-16 flex items-center justify-between pt-[10.5px] pb-[12px] px-4 sm:mx-0 sm:mb-20 sm:px-4 md:px-14
+      w-full z-30 bg-white border-b border-solid border-gray-300/80 relative"
       >
         <div className="mt-0 pb-0 flex flex-row justify-center items-center">
           <Link
             href={`/${locale}/`}
             className="text-3xl font-bold text-black 
-          flex flex-row items-center justify-center gap-2"
+          flex flex-row items-center justify-center xl:gap-2 gap-[3.5px]"
           >
             <span
-              className={`text-[44px] text-blue-600 ${
+              className={`xl:text-[44px] text-blue-600 text-[35px] sm:text-[38px] md:sm:text-[40px] ${
                 locale === "ar" && "order-2 text-[37.5px]"
               }`}
               style={
@@ -114,7 +95,7 @@ export default function Header({ email, session }: {
             </span>
 
             <span
-              className={`tracking-wide text-[44px] ${
+              className={`xl:text-[44px] tracking-wide text-[35px] sm:text-[38px] md:sm:text-[40px] ${
                 locale === "ar" && "text-[30px]"
               }`}
               style={
@@ -128,7 +109,7 @@ export default function Header({ email, session }: {
           </Link>
 
           <ul
-            className={`hidden pl-14 align-middle xl:flex mt-[13.5px] ${
+            className={`hidden pl-5 2xl:pl-14 align-middle 2xl:flex mt-[13.5px] ${
               locale === "ar" && "px-4"
             }`}
           >
@@ -151,7 +132,7 @@ export default function Header({ email, session }: {
         </div>
 
         <div
-          className="hidden text-right xl:flex xl:flex-row items-center justify-center gap-6
+          className="hidden text-right 2xl:flex 2xl:flex-row items-center justify-center gap-6
         mt-2"
         >
           {/* <Link
@@ -163,54 +144,13 @@ export default function Header({ email, session }: {
             {header("Contact Us")}
           </Link> */}
 
-          {!email && (
-            <Link
-            className="bg-green-500 inline-flex items-center px-8 py-3
-              hover:bg-green-500/95 active:bg-green-600
-               text-lg font-semibold tracking-tighter text-white
-               mx-[3px]
-              "
-            href={`/${locale}/login`}
-          >
-            {header("Log In")}
-          </Link>
-          )}
+          <LogIn email={email} />
 
-          {email && (
-            <Link
-            className="bg-red-500 inline-flex items-center px-8 py-3
-              hover:bg-red-500/95 active:bg-red-600
-               text-lg font-semibold tracking-tighter text-white
-               mx-[3px]
-              "
-            href={`#`}
-            onClick={() => signOut({callbackUrl: `/${locale}/login`})}
-          >
-            {header("Log Out")}
-          </Link>
-          )}
+          <LogOut email={email} />
 
-          <ThemeSwitch />
+          {/* <ThemeSwitch /> */}
 
-
-
-          <Select onValueChange={handleSelectChange}>
-            <SelectTrigger className="w-16 focus:outline-none focus:ring-0 focus:border-none
-            border-black/50 border-2">
-              <SelectValue placeholder={locale === 'en' ? "EN" : "AR"} />
-            </SelectTrigger>
-            <SelectContent className="focus:outline-none focus:ring-0 focus:border-none"
-            >
-              <SelectItem value="english"
-              className="focus:bg-gray-100 focus:outline-none focus:ring-0"
-              >EN</SelectItem>
-              <SelectItem value="arabic"
-              className="focus:bg-gray-100 focus:outline-none focus:ring-0
-              ">AR</SelectItem>
-            </SelectContent>
-          </Select>
-
-
+          <ArabicEnglishSelect />
         </div>
 
         <div className="items-center hidden">
@@ -244,6 +184,102 @@ export default function Header({ email, session }: {
             </svg>
           </button>
         </div>
+
+        <div className="flex flex-row justify-center items-center gap-5 2xl:hidden">
+          {/* <ThemeSwitch /> */}
+
+          <ArabicEnglishSelect />
+
+          <FiMenu
+            size={25}
+            className="mt-[3px] hover:text-gray-800 active:scale-95 cursor-pointer"
+            onClick={() => setOpenMobileNav(!openMobileNav)}
+          />
+        </div>
+
+        {openMobileNav && (
+          <div
+            className="2xl:hidden w-full absolute top-[63px] left-0 bg-white sm:w-[50vw] sm:h-[100vh]
+            md:w-[40vw] lg:w-[30vw] py-5 flex flex-col justify-start items-center"
+          >
+            <IoClose
+              size={25}
+              className="hover:text-gray-800 active:scale-95 cursor-pointer
+            absolute top-3 right-4 "
+              onClick={() => setOpenMobileNav(false)}
+            />
+
+            <ul
+              className={`flex flex-col justify-center items-center gap-1 my-6 ${
+                locale === "ar" && "px-4"
+              }`}
+            >
+              {Navigation.map((nav, index) => {
+                const path = `/${locale}${nav.href}`;
+
+                return (
+                  <>
+                    <li key={nav.name}>
+                      {/* <FlayoutLink
+                      href={`/${locale}${nav.href}`}
+                      FlyoutContent={nav?.FlayOutConent}
+                      nav={nav}
+                    >
+                      {locale === "en" ? nav.name : nav.arName}
+                    </FlayoutLink> */}
+
+                      <Link
+                        href={`${!nav.noCourserPointer ? `/${locale}${nav.href}` : '#'}`}
+                        className={`relative text-black hover:text-gray-800 active:scale-95 ${
+                          nav.style
+                        } ${
+                          pathname === path &&
+                          path !== `/${locale}/courses/frontend` &&
+                          "font-bold hover:text-black/90"
+                        }
+                    ${nav?.noCourserPointer && "cursor-default"}
+                    ${
+                      locale === "ar"
+                        ? "text-[17px] mx-[16.25px]"
+                        : "text-xl mx-[19.5px]"
+                    }`}
+                        onClick={() => {
+                          if (nav.name === "Courses") {
+                            setOpenCoursesMobileNav(!openCoursesMobileNav);
+                            setOpenWebFontsMobileNav(false);
+                            return;
+                          }
+
+                          if (nav.name === "Web fonts") {
+                            setOpenWebFontsMobileNav(!openWebFontsMobileNav);
+                            setOpenCoursesMobileNav(false);
+                            return;
+                          }
+
+                          setOpenMobileNav(false);
+                        }}
+                      >
+                        {locale === "en" ? nav.name : nav.arName}
+                      </Link>
+
+                    </li>
+                    
+                  </>
+                );
+              })}
+              
+            </ul>
+
+            <LogIn email={email} onClickCloseMobNav={() => setOpenMobileNav(false)} />
+
+            <LogOut email={email} onClickCloseMobNav={() => setOpenMobileNav(false)} />
+
+            {openCoursesMobileNav && <CoursesContent />}
+
+            {openWebFontsMobileNav && <WebFontsContent />}
+
+          </div>
+        )}
       </div>
     </>
   );

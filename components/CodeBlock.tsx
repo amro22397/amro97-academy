@@ -29,7 +29,7 @@ const CodeBlock = ({
   return (
     <>
       <div className={`relative bg-gray-900 text-white rounded-lg shadow-md overflow-hidden hover:overflow-auto
-      pb-1 w-[650px] mb-10`} dir="ltr"
+      pb-1 w-[650px] max-md:w-full mb-10`} dir="ltr"
       
       >
         {/* <SyntaxHighlighter language={language} style={dracula}>

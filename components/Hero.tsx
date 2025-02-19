@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <div
-      className="flex flex-row items-center
+      className="flex xl:flex-row flex-col items-center
     justify-center gap-20 mb-10" 
     >
         {/* <h2
@@ -43,13 +43,13 @@ const Hero = () => {
         </div>
       
 
-      <div className="mb-20 mt-44 hidden flex-col lg:mt-12 lg:flex">
+      <div className="flex-col lg:flex">
         <Image
           src={`/whatsapp ad.png`}
           alt="Hero"
           width={1000}
           height={500}
-          className="w-[775px] h-[400px]"
+          className="w-[775px] sm:h-[400px] sm:px-0 h-[300px]"
         />
       </div>
     </div>

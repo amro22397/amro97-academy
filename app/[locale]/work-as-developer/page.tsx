@@ -21,10 +21,10 @@ const page = () => {
   return (
     <div
       className="mx-auto flex flex-col justify-center items-center pb-[78px]
-    w-[1250px]"
+    max-w-[1250px] xl:px-0 px-6"
     >
       <div
-        className="flex w-full flex-col text-left lg:text-center gap-4
+        className="flex w-full flex-col lg:text-center gap-4
       mb-9 "
       >
         <h2
@@ -86,7 +86,7 @@ const page = () => {
             </h3>
           </div> */}
 
-      <div className="flex flex-row justify-center w-full gap-8">
+      <div className="flex 2xl:flex-row flex-col justify-center w-full xl:gap-8 gap-16">
         <div className="flex flex-col w-full gap-6">
           <h2 className="accordion-title">{workAsDeveloperPage("To have a job")}</h2>
 
@@ -181,7 +181,7 @@ const page = () => {
                   </h2>
                 ) : (
                   <h2 className="accordion-trigger-work-as-developer-h2">
-                    أبحث عن تدريب في شركة
+                    إبحث عن تدريب في شركة
                   </h2>
                 )}
               </AccordionTrigger>
@@ -232,7 +232,7 @@ const page = () => {
                   </h2>
                 ) : (
                   <h2 className="accordion-trigger-work-as-developer-h2">
-                    أعمل مع فريق من المبرمجين الجدد
+                    إعمل مع فريق من المبرمجين الجدد
                   </h2>
                 )}
               </AccordionTrigger>
@@ -335,7 +335,7 @@ const page = () => {
                   </h2>
                 ) : (
                   <h2 className="accordion-trigger-work-as-developer-h2">
-                    ابحث عن تدريب إفتراضي من خلال قوقل
+                    إبحث عن تدريب إفتراضي من خلال قوقل
                   </h2>
                 )}
               </AccordionTrigger>

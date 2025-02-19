@@ -23,7 +23,7 @@ const WebFontsContent = () => {
 
   return (
     <div
-      className="w-64 bg-white p-6 shadow-xl
+      className="2xl:w-64 w-full  bg-white p-6 2xl:shadow-xl
     flex flex-col justify-center items-center gap-2 rounded-m"
     >
       {webFontsContentLinks.map((link, index) => {

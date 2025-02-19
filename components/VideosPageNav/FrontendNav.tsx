@@ -27,7 +27,8 @@ const FrontendNav = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-full shadow-sm top-20 border-b-[1px] pt-4 my-[38.10px]">
+    <div className="w-full shadow-sm top-20 border-b-[1px] pt-4 my-[38.10px]
+    md:px-0 px-5">
       <div
         className="
     max-w-[1920px]

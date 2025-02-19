@@ -39,10 +39,10 @@ Go to english fonts
 </Link> */}
 
       <div
-        className="flex flex-row justify-between items-start
+        className="flex xl:flex-row flex-col justify-between items-start
       gap-[80px] my-3"
       >
-        <div className="">
+        <div className="max-md:w-[90vw]">
           {/* <div className="w-[700px] mb-2">
         <div className="mb-5 text-xl">
           هذا الكود يحتوي على كل الخطوط التي في الصفحة ..

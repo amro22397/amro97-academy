@@ -75,7 +75,7 @@ const CoursesContent = () => {
 
   return (
     <div
-      className="w-[550px] bg-white p-6 shadow-xl
+      className="2xl:w-[550px] w-full bg-white p-6 2xl:shadow-xl
     flex flex-col justify-center items-start gap-4 rounded-md"
     >
 

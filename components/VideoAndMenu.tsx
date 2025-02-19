@@ -116,12 +116,12 @@ const VideoAndMenu = ({
 
 
       <div
-        className="flex flex-row items-center justify-center
+        className="flex xl:flex-row flex-col items-center justify-center
     gap-20"
       >
         <ScrollArea
           className="p-5 h-[50vh] rounded-md border
-      bg-gray-200/75 w-[450px]"
+      bg-gray-200/75 sm:w-[450px] w-[95vw]"
           ref={scrollRef}
           onScroll={handleScroll}
           key={videos.length}
@@ -193,9 +193,10 @@ const VideoAndMenu = ({
           ))}
         </ScrollArea>
 
-        <div className="flex flex-col gap-3 justify-center items-end">
+        <div className="flex flex-col gap-3 justify-center items-end
+        max-xl:w-full">
           <iframe
-            className="w-[700px] h-[400px]"
+            className="md:w-[700px] w-full md:h-[400px] h-[300px]"
             src={`https://www.youtube.com/embed/${videoId}?si=-Q9f2kd-cDd-brrF`}
             title="YouTube video player"
             frameBorder="0"
@@ -209,7 +210,7 @@ const VideoAndMenu = ({
               href={`/${locale}/single-video?videoId=lH-5-oN7Ouo`}
               target="_blank"
               className="mx-[7.5px] text-black hover:underline active:text-black/85
-          cursor-pointer"
+          cursor-pointer max-xl:text-[16px]"
             >
               {videoAndMenu("ApplyWithLearningHow")}
             </Link>

@@ -35,7 +35,7 @@ const page = () => {
 Go to english fonts
 </Link> */}
 
-      <div className="flex flex-row justify-between items-start
+      <div className="flex xl:flex-row flex-col justify-between items-start
       gap-[66px] my-3">
         
         

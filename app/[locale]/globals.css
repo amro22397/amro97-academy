@@ -16,12 +16,12 @@ body {
 }
 
 .heroButtonLearn {
-  @apply py-11 w-[560px]
+  @apply py-11 sm:w-[560px] w-full
   transition-all duration-100 text-xl flex flex-col gap-1;
 }
 
 .videosPage {
-  @apply flex flex-col items-center justify-center mb-20;
+  @apply flex flex-col items-center justify-center mb-20 sm:px-0 px-5;
 }
 
 .flyout-links {
@@ -37,14 +37,14 @@ body {
 }
 
 .accordion {
-  @apply bg-neutral-200/90 px-4 w-[50%] mb-9;
+  @apply bg-neutral-200/90 px-4 w-full md:w-[50%] mb-9;
 }
 .accordion-trigger {
   @apply text-[18.25px] tracking-wide;
 }
 
 .accordion-work-as-developer {
-  @apply w-[700px] bg-gray-200/80 px-5 mx-auto;
+  @apply md:w-[700px] w-full bg-gray-200/80 px-5 mx-auto;
 }
 
 .accordion-trigger-work-as-developer {
@@ -64,7 +64,7 @@ body {
 }
 
 .font-page {
-  @apply mx-8 flex gap-10 flex-col;
+  @apply mx-4 flex gap-10 flex-col;
 }
 
 .heroButtonWidth {

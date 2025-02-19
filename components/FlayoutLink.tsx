@@ -43,7 +43,7 @@ const FlayoutLink = ({
         nav.style
       } ${pathname === path && path !== `/${locale}/courses/frontend` && "font-bold hover:text-black/90"}
       ${nav?.noCourserPointer && "cursor-default"}
-      ${locale === 'ar' ? 'text-[17px] mx-[16.25px]' : 'text-xl mx-[19.5px]'}`}
+      ${locale === 'ar' ? 'text-[17px] mx-[16.25px]' : 'text-xl 2xl:mx-[19.5px] mx-[10px]'}`}
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >

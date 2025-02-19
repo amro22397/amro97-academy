@@ -26,7 +26,7 @@ const page = () => {
     <div className="flex flex-col items-center justify-center mb-20">
       <div className="flex flex-col gap-3 justify-center items-end">
         <iframe
-          className="w-[1250px] h-[635px]"
+          className="xl:w-[1250px] w-[100vw] xl:h-[635px] h-[300px] sm:h-[350px] md:h-[400px]"
           src={`https://www.youtube.com/embed/${jVideoId}?si=-Q9f2kd-cDd-brrF`}
           title="YouTube video player"
           frameBorder="0"
