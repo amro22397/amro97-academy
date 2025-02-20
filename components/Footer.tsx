@@ -234,6 +234,12 @@ export default function Footer() {
                   <div className="p-6">
                   {footer('allRightsText')}  <br/>
                   {footer('All rights are reserved')}
+
+                  <div className="mt-2">
+                    Mady by <Link href={`https://www.wds-oman.com/${locale}`} target='_blank'
+                    className='text-indigo-700 hover:underline active:text-gray-700'
+                    >Web Dev Service</Link>
+                  </div>
                   </div>
                 </div>
             </div>
