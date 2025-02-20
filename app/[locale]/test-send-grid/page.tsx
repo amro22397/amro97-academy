@@ -20,6 +20,7 @@ const page = () => {
     <div>
       <Button onClick={(e) => sendEmail(e)} type="button"
         className="active:scale-95 hover:bg-green-600">Send</Button>
+        <></>
     </div>
   );
 };
