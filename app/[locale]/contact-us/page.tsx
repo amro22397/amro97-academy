@@ -49,7 +49,7 @@ const page = ({
 
     const formData = new FormData(e.target);
 
-    formData.append("access_key", "ce9610a5-e759-46bf-86a7-08b198f09ac4");
+    formData.append("access_key", "fdfbe3b9-e72d-44f0-a653-9be0118a84c3");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -185,6 +185,18 @@ const page = ({
               }}
               style={{ borderRadius: ".25rem" }}
             />
+
+            <Input
+              type="text"
+              name="Website name"
+              className={`${inputClassName} hidden`}
+              value={"amro97-academy"}
+              // onChange={(e) => {
+              //   handleChange();
+              //   setWhatsappNumber(e.target.value);
+              // }}
+              style={{ borderRadius: ".25rem" }}
+            />
           </div>
 
           <select
@@ -225,17 +237,19 @@ const page = ({
             disabled={loading}
             style={{ borderRadius: ".25rem" }}
           >
-            {loading ? <Loader2 className="animate-spin" /> : contactPage("Send message")}
+            {loading ? (
+              <Loader2 className="animate-spin" />
+            ) : (
+              contactPage("Send message")
+            )}
           </Button>
-
-         
 
           {messageSuccess && (
             <div
               className="flex flex-row items-center justify-center text-white text-xl
                 gap-2"
             >
-               <FaCheckCircle className="text-green-600" size={25} />
+              <FaCheckCircle className="text-green-600" size={25} />
 
               <span>{contactPage("Message sent successfully")}</span>
             </div>

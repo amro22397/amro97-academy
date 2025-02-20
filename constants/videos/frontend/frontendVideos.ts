@@ -60,26 +60,14 @@ export const frontendVideos = [
     },
 
     {
-        title: "A Better Spotify 2.0 Clone Music App",
+        title: "Spotify Clone with NextJS - Tailwind CSS - NextJS Middleware - NextAuth - Spotify API",
         description: '',
         notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=I1cpb0tYV74',
+        youtubeLink: 'https://www.youtube.com/watch?v=qFN6zQZU9jU',
         videoLink: '',
         image: '',
-        category: 'basic',
-        arCategory: 'أساسي',
-        type: 'Spotify',
-    },
-
-    {
-        title: "Spotify Clone Using React JS & Tailwind CSS",
-        description: '',
-        notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=amFYvQK4huo',
-        videoLink: '',
-        image: '',
-        category: 'basic',
-        arCategory: 'أساسي',
+        category: 'additional',
+        arCategory: 'إضافي',
         type: 'Spotify',
     },
 
@@ -111,6 +99,30 @@ export const frontendVideos = [
     //
     //
     //
+
+    {
+        title: "A Better Spotify 2.0 Clone Music App",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=I1cpb0tYV74',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Spotify',
+    },
+
+    {
+        title: "Spotify Clone Using React JS & Tailwind CSS",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=amFYvQK4huo',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Spotify',
+    },
 
     {
         title: "Build A Advance Music Player Application with React JS | Fully Customized",

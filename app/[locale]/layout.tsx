@@ -77,7 +77,7 @@ export default async function RootLayout({
 
             <Providers>
         <NextIntlClientProvider messages={messages}>
-        <EmailIsNotVerified session={session} />
+        {/* <EmailIsNotVerified session={session} /> */}
               <Header email={session?.user?.email} session={session} />
           
           {children}

@@ -25,6 +25,30 @@ export const miniTutorials = [
     },
 
     {
+        title: 'Stopwatch using React in 20 minutes!',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=jPo0mIcNZfM',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+
+    },
+
+    {
+        title: 'To-Do App with Next.js 13: Learn CRUD Operations and Tailwind CSS UI',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=wi2xdrpmJNk',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+
+    },
+
+    {
         title: 'Image Gallery in NextJs Using SwiperJs',
         description: '',
         notes: '',
