@@ -17,7 +17,15 @@ body {
 
 .heroButtonLearn {
   @apply py-11 sm:w-[560px] w-full
-  transition-all duration-100 text-xl flex flex-col gap-1;
+  transition-all duration-100 flex flex-col gap-1;
+}
+
+.heroButtonLearnEnglish {
+  @apply mx-10;
+}
+
+.heroButtonSpanArabic {
+  @apply text-[26px] mb-1;
 }
 
 .videosPage {
@@ -69,6 +77,10 @@ body {
 
 .heroButtonWidth {
   @apply w-[75%];
+}
+
+.icon-class {
+  @apply absolute right-4 top-[10.5px] text-gray-500 cursor-pointer;
 }
 
 .social-class-name {

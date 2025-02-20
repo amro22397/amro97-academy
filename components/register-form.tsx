@@ -254,7 +254,7 @@ export function RegisterForm({
   });
 
   const formStyles = `text-md`;
-  const iconClass = `absolute right-4 top-2 text-gray-500 cursor-pointer`;
+  const iconClass = `absolute right-4 top-[10.5px] text-gray-500 cursor-pointer`;
 
   const session = useSession();
   console.log(session);
@@ -317,7 +317,7 @@ export function RegisterForm({
 
                   {type === "password" && formData.password ? (
                     <span
-                      className={`${iconClass}`}
+                      className={`icon-class`}
                       onClick={() => setType("text")}
                     >
                       <EyeIcon className="w-5 h-5" />
@@ -326,7 +326,7 @@ export function RegisterForm({
                     type === "text" &&
                     formData.password && (
                       <span
-                        className={`${iconClass}`}
+                        className={`icon-class`}
                         onClick={() => setType("password")}
                       >
                         <EyeOffIcon className="w-5 h-5" />

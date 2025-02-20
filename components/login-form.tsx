@@ -129,7 +129,7 @@ export function LoginForm({
 
               {type === "password" && formData.password ? (
   
-  <span className={`${iconClass}`}
+  <span className={`icon-class`}
   onClick={() => setType("text")}
   >
     
@@ -138,7 +138,7 @@ export function LoginForm({
 
 ) : type === "text" && formData.password && (
 
-  <span className={`${iconClass}`}
+  <span className={`icon-class`}
   onClick={() => setType("password")}
   >
     <EyeOffIcon className="w-5 h-5" />

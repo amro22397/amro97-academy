@@ -105,7 +105,7 @@ const page = ({
   return (
     <div className="flex items-center justify-center mb-[78px]">
       <div
-        className={`xl:h-[54%] order-2 xl:order-none 
+        className={`xl:h-[54%] order-2 xl:order-none max-sm:w-full 
         ${
           isAbsolute
             ? "absolute top-[8.27rem] bottom-0 left-0 right-0 h-full max-w-[600px] mx-auto"
@@ -122,7 +122,7 @@ const page = ({
 
         <form
           onSubmit={handleSubmit}
-          className={`flex flex-col gap-6 p-10 bg-indigo-300/90 dark:bg-indigo-400/90
+          className={`flex flex-col gap-6 p-10 max-sm:w-full bg-indigo-300/90 dark:bg-indigo-400/90
             ${isAbsolute ? "bg-indigo-300/95 dark:bg-indigo-400" : ""}`}
         >
           <h3

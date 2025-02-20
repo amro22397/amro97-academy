@@ -259,7 +259,7 @@ const ResetForm = () => {
 
                 {type === "password" && password ? (
                   <span
-                    className={`${iconClass}`}
+                    className={`icon-class`}
                     onClick={() => setType("text")}
                   >
                     <EyeIcon className="w-5 h-5" />
@@ -268,7 +268,7 @@ const ResetForm = () => {
                   type === "text" &&
                   password && (
                     <span
-                      className={`${iconClass}`}
+                      className={`icon-class`}
                       onClick={() => setType("password")}
                     >
                       <EyeOffIcon className="w-5 h-5" />
