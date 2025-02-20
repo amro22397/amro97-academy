@@ -88,8 +88,8 @@ export default function Footer() {
       <footer className="grotesk bg-[#f9fbfb]">
         <div className="border border-black/15 max-w-8xl mx-auto my-6"></div>
         <div className="max-w-8xl mx-auto text-black">
-          <div className="flex xl:flex-row flex-col justify-center items-center pb-12 pt-1
-          xl:gap-36 gap-6">
+        <div className="flex md:flex-row flex-col justify-evenly items-center pb-12 pt-1
+          ">
 
 
           <div className="flex flex-col items-center">
@@ -210,7 +210,7 @@ export default function Footer() {
             </div> */}
 
 
-            <div className="flex flex-col items-center text-center w-[400px]">
+            <div className="flex flex-col items-center text-center ">
                 <div className="relative">
                   <div className="absolute top-0 right-0 pt-2 pr-2">
                     <svg
