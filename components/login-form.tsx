@@ -18,7 +18,7 @@ import { signIn, useSession } from "next-auth/react"
 // import { UserAuth } from "@/context/AuthContext"
 import { useRouter } from "next/navigation"
 import { EyeIcon, EyeOffIcon, Loader, Loader2 } from "lucide-react"
-import { useLocale } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import Link from "next/link"
 
 export function LoginForm({
@@ -85,20 +85,25 @@ export function LoginForm({
     const iconClass = `absolute right-4 top-2 text-gray-500 cursor-pointer`
 
 
+    const loginPage = useTranslations("LoginPage");
+
+
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
         <CardHeader>
-          <CardTitle className="text-2xl">Login</CardTitle>
+          <CardTitle className="text-2xl">{loginPage("Login")}</CardTitle>
           <CardDescription className="text-gray-600 dark:text-gray-200">
-            Enter your email below to login to your account
+            {loginPage("ُEnterYourEmailAddress")}
           </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col gap-6">
               <div className="grid gap-2">
-                <Label htmlFor="email" className={`${formStyles}`}>Email</Label>
+                <Label htmlFor="email" className={`${formStyles}`}>
+                  {loginPage("Email")}
+                </Label>
                 <Input
                   id="email"
                   type="email"
@@ -110,79 +115,85 @@ export function LoginForm({
               </div>
               <div className="grid gap-2">
                 <div className="flex items-center">
-                  <Label htmlFor="password" className={`${formStyles}`}>Password</Label>
-                  <a
+                  <Label htmlFor="password" className={`${formStyles}`}>
+                    {loginPage("Password")}
+                  </Label>
+                  <Link
                     href={`/${locale}/forgot-password`}
-                    className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
+                    className="mx-2 inline-block text-sm underline-offset-4 hover:underline"
                   >
-                    Forgot your password?
-                  </a>
+                    {loginPage("Forgot your password?")}
+                  </Link>
                 </div>
 
                 <div className="relative">
+                  <Input
+                    id="password"
+                    type={type}
+                    defaultValue={formData.password}
+                    onChange={handleChange}
+                    required
+                  />
 
-                <Input id="password" type={type}
-                defaultValue={formData.password}
-                onChange={handleChange}
-                required />
-              
-
-              {type === "password" && formData.password ? (
-  
-  <span className={`icon-class`}
-  onClick={() => setType("text")}
-  >
-    
-    <EyeIcon className="w-5 h-5" />
-  </span>
-
-) : type === "text" && formData.password && (
-
-  <span className={`icon-class`}
-  onClick={() => setType("password")}
-  >
-    <EyeOffIcon className="w-5 h-5" />
-  </span>
-
-)}
-
+                  {type === "password" && formData.password ? (
+                    <span
+                    className={`${locale === "en" ? "icon-class" : "icon-class-ar"}`}
+                      onClick={() => setType("text")}
+                    >
+                      <EyeIcon className="w-5 h-5" />
+                    </span>
+                  ) : (
+                    type === "text" &&
+                    formData.password && (
+                      <span
+                      className={`${locale === "en" ? "icon-class" : "icon-class-ar"}`}
+                        onClick={() => setType("password")}
+                      >
+                        <EyeOffIcon className="w-5 h-5" />
+                      </span>
+                    )
+                  )}
                 </div>
-
-                </div>
-
-              <div className="flex flex-col gap-3">
-
-              <Button type="submit" className="w-full bg-green-500 hover:bg-green-500/95 active:bg-green-500/90 text-white ">
-                {loading ? <Loader2 className="animate-spin" /> : "Login"}
-              </Button>
-              <Button variant="outline" className="w-full"
-              onClick={handleSignWithGoogle}
-              type="button">
-                
-                {loadingGoogle ? <Loader2 className="animate-spin" /> : 
-                <>
-                <Image 
-                src={'/Google_Icons-09-512.webp'}
-                width={24}
-                height={24}
-                alt="Google logo"
-                />
-                Continue With Google
-                </>
-                }
-
-              </Button>
-
               </div>
 
+              <div className="flex flex-col gap-3">
+                <Button
+                  type="submit"
+                  className="w-full bg-green-500 hover:bg-green-500/95 active:bg-green-500/90 text-white "
+                >
+                  {loading ? <Loader2 className="animate-spin" /> : loginPage("LoginButton")}
+                </Button>
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  onClick={handleSignWithGoogle}
+                  type="button"
+                >
+                  {loadingGoogle ? (
+                    <Loader2 className="animate-spin" />
+                  ) : (
+                    <>
+                      <Image
+                        src={"/Google_Icons-09-512.webp"}
+                        width={24}
+                        height={24}
+                        alt="Google logo"
+                      />
+                      {loginPage("Continue With Google")}
+                    </>
+                  )}
+                </Button>
+              </div>
 
-            <div className="mt-0 text-center text-sm">
-              Don&apos;t have an account?{" "}
-              <Link href={`/${locale}/register`} className="underline underline-offset-4">
-                Register
-              </Link>
-            </div>
-
+              <div className="mt-0 text-center text-sm">
+                {loginPage("Don't have an account?")}
+                <Link
+                  href={`/${locale}/register`}
+                  className="hover:underline active:text-gray-800 underline-offset-4 mx-1"
+                >
+                  {loginPage("Register")}
+                </Link>
+              </div>
             </div>
           </form>
         </CardContent>

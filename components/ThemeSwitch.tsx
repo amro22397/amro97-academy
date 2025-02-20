@@ -6,7 +6,9 @@ import { useEffect, useState } from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
 
 
-export default function ThemeSwitch() {
+export default function ThemeSwitch({ onClickCloseMobNav }: {
+    onClickCloseMobNav?: () => void
+}) {
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme, resolvedTheme } = useTheme();
 
@@ -27,11 +29,17 @@ export default function ThemeSwitch() {
 
     if (resolvedTheme === 'dark') {
         return <FiSun className="text-white ml-1 cursor-pointer hover:text-white/85 active:scale-95" size={25}
-        onClick={() => setTheme('light')} />
+        onClick={() => {
+            setTheme('light');
+            onClickCloseMobNav?.();
+        }} />
     }
 
     if (resolvedTheme === 'light') {
         return <FiMoon className="text-black ml-1 cursor-pointer hover:text-black/85 active:scale-95" size={25}
-         onClick={() => setTheme('dark')} />
+         onClick={() => {
+            setTheme('dark');
+            onClickCloseMobNav?.();
+         }} />
     }
 }

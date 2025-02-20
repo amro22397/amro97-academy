@@ -28,7 +28,7 @@ import { useSession } from "next-auth/react";
 import { EyeIcon, EyeOffIcon, Loader2 } from "lucide-react";
 import ShowPassStrength from "@/components/ShowPassStrength";
 import { passwordStrength } from "check-password-strength";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 type strength = 0 | 1 | 2 | 3;
 
@@ -235,10 +235,13 @@ const ResetForm = () => {
     }, [session.status, router]); */
 
 
+    const resetPage = useTranslations('ResetPage');
+
+
   return (
     <Card className="flex flex-col justify-center items-start w-[400px] mx-auto">
         <CardHeader>
-          <CardTitle className="text-2xl">Reset Password</CardTitle>
+          <CardTitle className="text-2xl">{resetPage('Reset Password')}</CardTitle>
           <CardDescription className="text-gray-600"></CardDescription>
         </CardHeader>
         <CardContent className="w-full">
@@ -247,7 +250,7 @@ const ResetForm = () => {
               <div className="flex flex-col relative">
                 <Input
                   type={type}
-                  placeholder="Password"
+                  placeholder={resetPage('p-Password')}
                   value={password}
                   onChange={(e) => {
                     setPassword(e.target.value);
@@ -259,7 +262,7 @@ const ResetForm = () => {
 
                 {type === "password" && password ? (
                   <span
-                    className={`icon-class`}
+                    className={`${locale === "en" ? "icon-class" : "icon-class-ar"}`}
                     onClick={() => setType("text")}
                   >
                     <EyeIcon className="w-5 h-5" />
@@ -268,7 +271,7 @@ const ResetForm = () => {
                   type === "text" &&
                   password && (
                     <span
-                      className={`icon-class`}
+                    className={`${locale === "en" ? "icon-class" : "icon-class-ar"}`}
                       onClick={() => setType("password")}
                     >
                       <EyeOffIcon className="w-5 h-5" />
@@ -295,7 +298,7 @@ const ResetForm = () => {
               <div className="flex flex-col space-y-1.5">
                 <Input
                   type={type}
-                  placeholder="Confirm Password"
+                  placeholder={resetPage('p-Confirm Password')}
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   required
@@ -309,14 +312,14 @@ const ResetForm = () => {
                   className="bg-green-500 hover:bg-green-500/95 active:bg-green-500/90 text-white"
                   disabled={error.length > 0}
                 >
-                  {loading ? <Loader2 className="animate-spin" /> : "Submit"}
+                  {loading ? <Loader2 className="animate-spin" /> : resetPage('Submit')}
                 </Button>
 
                 <Link
-                  href={`/${locale}/login`}
+                  href={"/login"}
                   className="text-sm hover:underline active:text-gray-600 mt-[11.5px]"
                 >
-                  Back to sign in
+                  {resetPage('Back to sign in')}
                 </Link>
               </div>
             </div>

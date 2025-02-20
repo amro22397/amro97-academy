@@ -17,7 +17,7 @@ import Link from 'next/link'
 import { Loader2 } from 'lucide-react'
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 
 const ForgetForm = ({ session }: {
@@ -73,28 +73,29 @@ const ForgetForm = ({ session }: {
         setLoading(false)
     }
 
-  
+    const forgetPage = useTranslations('ForgetPage');
+
 
   return (
     <Card className='flex flex-col justify-center items-start w-[400px] mx-auto'>
   <CardHeader>
-    <CardTitle className='text-2xl'>Forgot Password</CardTitle>
-    <CardDescription className='text-gray-600'>Enter your email...<br/> 
-        We will send you a link to reset</CardDescription>
+    <CardTitle className='text-2xl'>{forgetPage('Forgot Password')}</CardTitle>
+    <CardDescription className='text-gray-600'>{forgetPage('Enter your email')}<br/> 
+    {forgetPage('SendYouReset')}</CardDescription>
   </CardHeader>
   <CardContent className='w-full'>
 
   <form onSubmit={handleSubmit}
    className="flex flex-row w-full items-center justify-between gap-2 ">
 
-      <Input type="email" placeholder="Email"
+      <Input type="email" placeholder={forgetPage('Email')}
       value={email}
       onChange={e => setEmail(e.target.value)}
       required
       className='placeholder-gray-700' />
 
       <Button type="submit"
-      className='bg-green-500 hover:bg-green-500/95 active:bg-green-500/90 text-white'>{loading ? <Loader2 className="animate-spin" /> : "Send"}</Button>
+      className='bg-green-500 hover:bg-green-500/95 active:bg-green-500/90 text-white'>{loading ? <Loader2 className="animate-spin" /> : forgetPage('Send')}</Button>
 
     </form>
 
@@ -106,9 +107,9 @@ const ForgetForm = ({ session }: {
   </CardContent>
 
   <CardFooter>
-    <Link href={'/login'}
+    <Link href={`/${locale}/login`}
     className='text-sm hover:underline active:text-gray-600' >
-    Back to sign in
+    {forgetPage('Back to sign in')}
     </Link>
   </CardFooter>
 </Card>

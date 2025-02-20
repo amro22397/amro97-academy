@@ -123,6 +123,41 @@ const page = () => {
             </AccordionItem>
           </Accordion>
 
+
+
+          <Accordion
+            type="single"
+            collapsible
+            className="accordion-work-as-developer"
+          >
+            <AccordionItem value="item-1">
+              <AccordionTrigger
+                className="accordion-trigger-work-as-developer
+            hover:no-underline hover:text-black/85"
+              >
+                {locale === "en" ? (
+                  <h2 className="accordion-trigger-work-as-developer-h2">
+                    Search for a remote job
+                  </h2>
+                ) : (
+                  <h2 className="accordion-trigger-work-as-developer-h2">
+                    أبحث عن عمل عن بعد
+                  </h2>
+                )}
+              </AccordionTrigger>
+
+              <AccordionContent className="">
+                <p className="tracking-wide text-[16px] text-gray-800 mx-3">
+                  This will be the future to find a job every where by working remote and online <br />
+                  in remote job platforms like Flex Jobs and others.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+
+
+
+
           <Accordion
             type="single"
             collapsible

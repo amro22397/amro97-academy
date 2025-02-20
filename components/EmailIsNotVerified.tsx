@@ -1,16 +1,27 @@
+'use client'
+
 import { getSession, getUser } from "@/actions/getUser";
 import { User } from "@/models/user";
 import mongoose from "mongoose";
 import React from "react";
 import IfYouDontRecieve from "./IfYouDontRecieve";
 
-const EmailIsNotVerified = async () => {
-  const session = await getUser();
-  console.log(session?.user);
+import { useTranslations } from 'next-intl' 
+import { Session } from "@/types/session";
+
+
+const EmailIsNotVerified = ({ session }: {
+  session: Session
+}) => {
+  // const session = await getUser();
+  // console.log(session?.user);
 
   // mongoose.connect(process.env.MONGO_URL as string);
   // const user = await User.findOne({ email: session?.user?.email });
   // console.log(user)
+
+  const emailIsNotVerified = useTranslations('EmailIsNotVerified');
+
 
   return (
     <>
@@ -22,18 +33,15 @@ const EmailIsNotVerified = async () => {
               className="bg-red-500 text-white w-full
     lg:flex justify-center text-lg py-1 hidden"
             >
-              Your account <span className="mx-1 underline">is not</span>{" "}
-              verified yet. Please check your email for verification link and
-              refresh the page.
+              {emailIsNotVerified('Your account')}<span className="mx-1 underline">{emailIsNotVerified('is not')}</span>{" "}
+              {emailIsNotVerified('VerifiedYetPlease')}
             </div>
 
             <div
               className="bg-red-500 text-white w-full
-    lg:hidden justify-center text-lg py-1 flex px-3"
+    lg:hidden justify-center text-lg py-1 flex"
             >
-              Your account is not 
-              verified yet. Please check your email for verification link and
-              refresh the page.
+              {emailIsNotVerified('YourAccountIsNot')}
             </div>
             <IfYouDontRecieve />
           </div>

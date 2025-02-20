@@ -9,6 +9,7 @@ import axios from "axios";
 import { CircularProgress } from "@mui/material";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { CircleX, SquareCheckBig } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 // import { headers } from "next/headers";
 // import type { NextRequest } from "next/server";
@@ -84,24 +85,26 @@ const [loading, setLoading] = useState(false);
             }
         }, [verifyToken, id]);
 
+        const verifyPage = useTranslations('VerifyPage');
+
 
         if (loading) {
-            return <h1 className="flex justify-center items-center h-screen">
+            return <h1 className="flex justify-center items-center h-[50vh]">
                 <CircularProgress />
             </h1>
         }
 
   return (
-    <div className="flex justify-center items-center min-h-[50vh]">
+    <div className="flex justify-center items-center h-[50vh]">
       <div className="w-full max-w-md">
         {verified && (
           <Alert variant="default" className="mb-5">
             <div className="flex flex-row gap-[15px] items-center">
             <SquareCheckBig color="green" size={40} />
             <div className="flex flex-col justify-center">
-            <AlertTitle className="text-2xl font-semibold">Email is verified!</AlertTitle>
+            <AlertTitle className="text-2xl font-semibold">{verifyPage('Email is verified!')}</AlertTitle>
             <AlertDescription className="text-lg">
-              Your email has been verified successfully.
+            {verifyPage('VerifiedSuccessfully')}
             </AlertDescription>
             </div>
             </div>
@@ -113,7 +116,7 @@ const [loading, setLoading] = useState(false);
             <div className="flex flex-row gap-[14px] items-center">
             <CircleX color="red" size={40}/>
             <div className="flex flex-col justify-center">
-            <AlertTitle className="text-2xl font-semibold">Email verification failed!</AlertTitle>
+            <AlertTitle className="text-2xl font-semibold">{verifyPage('Email verification failed!')}</AlertTitle>
             <AlertDescription className="text-lg">
               {error}
             </AlertDescription>

@@ -148,9 +148,11 @@ export default function Header({
 
           <LogOut email={email} />
 
-          {/* <ThemeSwitch /> */}
+          
 
           <ArabicEnglishSelect />
+
+          <ThemeSwitch />
         </div>
 
         <div className="items-center hidden">
@@ -186,7 +188,7 @@ export default function Header({
         </div>
 
         <div className="flex flex-row justify-center items-center gap-5 2xl:hidden">
-          {/* <ThemeSwitch /> */}
+          
 
           
 
@@ -270,8 +272,11 @@ export default function Header({
               
             </ul>
 
-            <div className="mb-5">
+            <div className="mb-5 flex flex-row gap-[10px] justify-center items-center"
+            dir="ltr">
             <ArabicEnglishSelect onClickCloseMobNav={() => setOpenMobileNav(false)} />
+
+            <ThemeSwitch onClickCloseMobNav={() => setOpenMobileNav(false)} />
             </div>
 
             <LogIn email={email} onClickCloseMobNav={() => setOpenMobileNav(false)} />

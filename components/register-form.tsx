@@ -37,7 +37,8 @@ import { useForm } from "react-hook-form" */
 import { useRouter } from "next/navigation";
 import ShowPassStrength from "./ShowPassStrength";
 import { passwordStrength } from "check-password-strength";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 
 type strength = 0 | 1 | 2 | 3;
 
@@ -256,16 +257,19 @@ export function RegisterForm({
   const formStyles = `text-md`;
   const iconClass = `absolute right-4 top-[10.5px] text-gray-500 cursor-pointer`;
 
-  const session = useSession();
-  console.log(session);
+  // const session = useSession();
+  // console.log(session);
+
+  const registerPage = useTranslations('RegisterPage');
+
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
         <CardHeader>
-          <CardTitle className="text-2xl">Register</CardTitle>
+          <CardTitle className="text-2xl">{registerPage('Register')}</CardTitle>
           <CardDescription className="text-gray-600">
-            Enter your details below to register to your account
+          {registerPage('EnterDetailsRegister')}
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -273,7 +277,7 @@ export function RegisterForm({
             <div className="flex flex-col gap-6">
               <div className="grid gap-1">
                 <Label htmlFor="email" className={`${formStyles}`}>
-                  User name
+                {registerPage('User name')}
                 </Label>
                 <Input
                   id="name"
@@ -286,7 +290,7 @@ export function RegisterForm({
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="email" className={`${formStyles}`}>
-                  Email
+                {registerPage('Email')}
                 </Label>
                 <Input
                   id="email"
@@ -299,7 +303,7 @@ export function RegisterForm({
               </div>
               <div className="grid gap-2 w-[100%]">
                 <Label htmlFor="password" className={`${formStyles}`}>
-                  Password
+                {registerPage('Password')}
                 </Label>
 
                 <div className="relative w-[100%]">
@@ -317,7 +321,7 @@ export function RegisterForm({
 
                   {type === "password" && formData.password ? (
                     <span
-                      className={`icon-class`}
+                    className={`${locale === "en" ? "icon-class" : "icon-class-ar"}`}
                       onClick={() => setType("text")}
                     >
                       <EyeIcon className="w-5 h-5" />
@@ -326,7 +330,7 @@ export function RegisterForm({
                     type === "text" &&
                     formData.password && (
                       <span
-                        className={`icon-class`}
+                      className={`${locale === "en" ? "icon-class" : "icon-class-ar"}`}
                         onClick={() => setType("password")}
                       >
                         <EyeOffIcon className="w-5 h-5" />
@@ -343,8 +347,7 @@ export function RegisterForm({
                       : "flex"
                   } text-sm text-red-500`}
                 >
-                  You need at least one lowercase and uppercase letter, number
-                  and special character <br /> (A-Z, a-z, 0-9 and !@#$%^&*)
+                  {registerPage('AtLeastOneLowercase1')}<br /> {registerPage('AtLeastOneLowercase2')}
                 </div>
                 )}
 
@@ -358,7 +361,7 @@ export function RegisterForm({
 
               <div className="grid gap-2">
                 <Label htmlFor="email" className={`${formStyles}`}>
-                  Confirm password
+                {registerPage('Confirm password')}
                 </Label>
                 <Input
                   id="confirm-password"
@@ -372,7 +375,7 @@ export function RegisterForm({
 
               <div className="flex flex-col gap-3">
                 <Button type="submit" className="w-full bg-green-500 hover:bg-green-500/95 active:bg-green-500/90 text-white">
-                  {loading ? <Loader2 className="animate-spin" /> : "Register"}
+                  {loading ? <Loader2 className="animate-spin" /> : registerPage('RegisterButton')}
                 </Button>
 
                 <Button
@@ -391,17 +394,17 @@ export function RegisterForm({
                         height={24}
                         alt="Google logo"
                       />
-                      Continue With Google
+                      {registerPage('Continue With Google')}
                     </>
                   )}
                 </Button>
               </div>
             </div>
             <div className="mt-4 text-center text-sm">
-              Already have an account?{" "}
-              <a href={`/${locale}/login`} className="underline underline-offset-4">
-                Sign In
-              </a>
+            {registerPage('Already have an account?')}{" "}
+              <Link href={`/${locale}/login`} className="hover:underline active:text-gray-800 underline-offset-4">
+              {registerPage('Sign In')}
+              </Link>
             </div>
           </form>
         </CardContent>
