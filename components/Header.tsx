@@ -188,7 +188,7 @@ export default function Header({
         <div className="flex flex-row justify-center items-center gap-5 2xl:hidden">
           {/* <ThemeSwitch /> */}
 
-          <ArabicEnglishSelect />
+          
 
           <FiMenu
             size={25}
@@ -269,6 +269,10 @@ export default function Header({
               })}
               
             </ul>
+
+            <div className="mb-5">
+            <ArabicEnglishSelect onClickCloseMobNav={() => setOpenMobileNav(false)} />
+            </div>
 
             <LogIn email={email} onClickCloseMobNav={() => setOpenMobileNav(false)} />
 

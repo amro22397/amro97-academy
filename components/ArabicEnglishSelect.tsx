@@ -12,7 +12,9 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
 
-const ArabicEnglishSelect = () => {
+const ArabicEnglishSelect = ({ onClickCloseMobNav }: {
+  onClickCloseMobNav?: () => void;
+}) => {
 
     const pathname = usePathname() as string;
       const locale = useLocale();
@@ -46,6 +48,8 @@ const ArabicEnglishSelect = () => {
     if (locale === "en") {
       router.push(`/ar${path}`)
     }
+
+    onClickCloseMobNav?.();
   }
 
   return (

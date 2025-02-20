@@ -16,7 +16,7 @@ body {
 }
 
 .heroButtonLearn {
-  @apply py-11 sm:w-[560px] w-full
+  @apply py-11 sm:w-[560px] w-[95vw] mx-auto
   transition-all duration-100 flex flex-col gap-1;
 }
 
@@ -25,7 +25,11 @@ body {
 }
 
 .heroButtonSpanArabic {
-  @apply text-[26px] mb-1;
+  @apply md:text-[26px] mb-1 text-2xl;
+}
+
+.heroButtonSpanEnglish {
+  @apply md:text-3xl text-2xl;
 }
 
 .videosPage {

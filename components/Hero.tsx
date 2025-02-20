@@ -32,16 +32,16 @@ const Hero = () => {
           onClick={() => router.push(`/${locale}/courses/frontend`)}
           >
           <span className={`font-semibold tracking-wider
-            ${locale === 'ar' ? 'heroButtonSpanArabic' : 'text-3xl'}`}>{hero('Learn Frontend Development')}</span>
-          <span className="text-xl">{hero('learnFrontendWithTech')}</span>
+            ${locale === 'ar' ? 'heroButtonSpanArabic' : 'heroButtonSpanEnglish'}`}>{hero('Learn Frontend Development')}</span>
+          <span className="md:text-xl text-lg">{hero('learnFrontendWithTech')}</span>
           </Button>
 
           <Button className="heroButtonLearn bg-yellow-600 hover:bg-yellow-600/95 active:bg-yellow-700"
           onClick={() => router.push(`/${locale}/courses/fullstack`)}
           >
           <span className={`font-semibold tracking-wider
-            ${locale === 'ar' ? 'heroButtonSpanArabic' : 'text-3xl'}`}>{hero('Learn Fullstack Development')}</span>
-          <span className="text-xl">{hero('learnFullstackWithTech')}</span>
+            ${locale === 'ar' ? 'heroButtonSpanArabic' : 'heroButtonSpanEnglish'}`}>{hero('Learn Fullstack Development')}</span>
+          <span className="md:text-xl text-lg">{hero('learnFullstackWithTech')}</span>
           </Button>
         </div>
       
