@@ -101,7 +101,7 @@ export default function Footer() {
                 rel="noopener"
                 className={`social-class-name`}
               >
-                <span className="sr-only">Facebook</span>
+                <span className="sr-only">Facebook</span><></>
                 <Facebook />
               </Link>
               <Link
