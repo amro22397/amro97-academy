@@ -88,7 +88,7 @@ export default function Footer() {
       <footer className="grotesk bg-[#f9fbfb]">
         <div className="border border-black/15 max-w-8xl mx-auto my-6"></div>
         <div className="max-w-8xl mx-auto text-black">
-        <div className="flex md:flex-row flex-col justify-evenly items-center pb-12 pt-1
+        <div className="flex md:flex-row flex-col justify-evenly items-center pb-12 pt-1 space-y-6 md:space-y-0
           ">
 
 
