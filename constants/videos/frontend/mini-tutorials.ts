@@ -110,6 +110,14 @@ export const miniTutorials = [
         arCategory: 'أساسي',
     },
 
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
     {
         title: 'The easiest way to add videos in NextJs',
         description: '',
@@ -151,6 +159,17 @@ export const miniTutorials = [
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=83counzr7Wc',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Calculator App using React JS | React Beginner Project',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=h6lVvsUkdjI',
         videoLink: '',
         image: '',
         category: 'additional',
