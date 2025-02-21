@@ -207,28 +207,7 @@ export const fullstackVideos = [
     //     category: 'basic',
     // },
 
-    {
-        title: ' ( Jira Clone ) - Next JS, Shadcn UI, Tailwind, Clerk, NeonDB',
-        description: '',
-        notes: 'This app uses NeonDB for database if you want to use it it is fine, or you can think to implement MongoDB backend on it as you learned from other tutorials',
-        arNotes: 'هذا التطبيق يستخدم NeonDB كواجهة خلفية لقاعدة البيانات إذا كنت تريد تعلم هذا وتطبيقه لا بأس ، أويمكنك تطبيق ماتعملته من بناء الواجهة الخلفية عن طريق MongoDB عليه',
-        youtubeLink: 'https://www.youtube.com/watch?v=R5dBYINNouY',
-        videoLink: '',
-        image: '',
-        category: 'additional',
-        arCategory: 'إضافي',
-    },
-
-    {
-        title: 'Portfolio Builder App | NextJs, React, TailwindCss, Drizzle ORM',
-        description: '',
-        notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=eRwIQO_VG0o',
-        videoLink: '',
-        image: '',
-        category: 'additional',
-        arCategory: 'إضافي',
-    },
+    
 
     {
         title: 'Build Your Own Podcasts Streaming App',
@@ -246,6 +225,50 @@ export const fullstackVideos = [
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=ajVcLGEw8Xw',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Telegram clone | NextJS 15 & Socket.io | MERN Stack | Real time chat application',
+        description: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=Okmf937BFgI',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Telegram Clone'
+    },
+
+    {
+        title: 'Real-Time Figma Clone: Next.js 15, React, Tailwind, Auth.js, Prisma (2024)',
+        description: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=43xmaSJbEVs',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: '( Jira Clone ) - Next JS, Shadcn UI, Tailwind, Clerk, NeonDB',
+        description: '',
+        notes: 'This app uses NeonDB for database if you want to use it it is fine, or you can think to implement MongoDB backend on it as you learned from other tutorials',
+        arNotes: 'هذا التطبيق يستخدم NeonDB كواجهة خلفية لقاعدة البيانات إذا كنت تريد تعلم هذا وتطبيقه لا بأس ، أويمكنك تطبيق ماتعملته من بناء الواجهة الخلفية عن طريق MongoDB عليه',
+        youtubeLink: 'https://www.youtube.com/watch?v=R5dBYINNouY',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Portfolio Builder App | NextJs, React, TailwindCss, Drizzle ORM',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=eRwIQO_VG0o',
         videoLink: '',
         image: '',
         category: 'additional',
@@ -305,6 +328,18 @@ export const fullstackVideos = [
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=WmMHbLzQI98',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Chat App'
+    },
+
+    {
+        title: 'Realtime Chat Messaging App with Authentication & SMS Notifications',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=MJzbJQLGehs',
         videoLink: '',
         image: '',
         category: 'additional',

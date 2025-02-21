@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import "./page.css";
 import VideoAndMenu from "@/components/VideoAndMenu";
-import { fullstackVideos } from "@/constants/videos/fullstackVideos";
+import { fullstackVideos } from "@/constants/videos/fullstack/nextjs-mongodb";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import VideoAndMenuDesc from "@/components/VideoAndMenuDesc";

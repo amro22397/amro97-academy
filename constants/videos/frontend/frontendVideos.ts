@@ -204,6 +204,17 @@ export const frontendVideos = [
     },
 
     {
+        title: "Social Media Content Generator SaaS with Next.js 14, Typescript, & Gemini AI",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=BP92C0eF_2M',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
         title: "Fitness Tracker Website using React JS |MERN Projects ",
         description: '',
         notes: '',
@@ -384,10 +395,22 @@ export const frontendVideos = [
     },
 
     {
-        title: 'React Chat App Full Tutorial 2024 ',
+        title: 'React Chat App Full Tutorial 2024',
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=domt_Sx-wTY',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+
+    },
+
+    {
+        title: 'Crime Report App using Nextjs14, GeminiAI, Shadcn and TailwindCSS',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=CF_oOKf5HJU',
         videoLink: '',
         image: '',
         category: 'additional',

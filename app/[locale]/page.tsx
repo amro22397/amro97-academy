@@ -16,9 +16,9 @@ const page = async () => {
   console.log(user)
  
   
-   if (!user?.user?.email) {
-     redirect(`/${locale}/login`);
-   }
+  //  if (!user?.user?.email) {
+  //    redirect(`/${locale}/login`);
+  //  }
 
   return (
     <>
