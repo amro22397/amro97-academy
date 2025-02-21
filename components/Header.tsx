@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 import { Navigation } from "../constants/navigation";
-import ThemeSwitch from "./ThemeSwitch";
+// import ThemeSwitch from "./ThemeSwitch";
 import { usePathname, useRouter } from "next/navigation";
 import FlayoutLink from "./FlayoutLink";
 
@@ -80,6 +80,11 @@ export default function Header({
             href={`/${locale}/`}
             className="text-3xl font-bold text-black 
           flex flex-row items-center justify-center xl:gap-2 gap-[3.5px]"
+          onClick={() => {
+            if (openMobileNav) {
+              setOpenMobileNav(false)
+            }
+          }}
           >
             <span
               className={`xl:text-[44px] text-blue-600 text-[35px] sm:text-[38px] md:sm:text-[40px] ${
@@ -152,7 +157,7 @@ export default function Header({
 
           <ArabicEnglishSelect />
 
-          <ThemeSwitch />
+          {/* <ThemeSwitch /> */}
         </div>
 
         <div className="items-center hidden">
@@ -276,7 +281,7 @@ export default function Header({
             dir="ltr">
             <ArabicEnglishSelect onClickCloseMobNav={() => setOpenMobileNav(false)} />
 
-            <ThemeSwitch onClickCloseMobNav={() => setOpenMobileNav(false)} />
+            {/* <ThemeSwitch onClickCloseMobNav={() => setOpenMobileNav(false)} /> */}
             </div>
 
             <LogIn email={email} onClickCloseMobNav={() => setOpenMobileNav(false)} />

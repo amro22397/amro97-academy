@@ -87,6 +87,19 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'File Storage App with Role Based Authorization (Next.js, Shadcn, Typescript)',
+        description: '',
+        notes: 'This app uses clerk and convex for database if you want to use it it is fine, or you can think to implement MongoDB backend on it as you learned from other tutorials',
+        arNotes: 'هذا التطبيق يستخدم clerk and convex كواجهة خلفية لقاعدة البيانات إذا كنت تريد تعلم هذا وتطبيقه لا بأس ، أويمكنك تطبيق ماتعملته من بناء الواجهة الخلفية عن طريق MongoDB عليه',
+        youtubeLink: 'https://www.youtube.com/watch?v=qop_fAoayWI',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+        type: 'File storage'
+    },
+
+    {
         title: 'Next.js 14 Portfolio Website with Admin Dashboard 2024 | NEXT.JS 14 MERN STACK With MongoDB, Next Auth',
         description: '',
         notes: '',
@@ -237,6 +250,30 @@ export const fullstackVideos = [
         image: '',
         category: 'additional',
         arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Car Rental app with Nextjs | free map location | stripe | SMTP | shadcn UI | mongodb | tailwind css',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=TacQVnbA83U',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Car Rental',
+    },
+
+    {
+        title: 'Car Rental | Next Js 13 App using React, Tailwind CSS, GraphQL, HyGraph, Typescript',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=OTTZEwWN4l4',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Car Rental',
     },
 
     {
@@ -460,6 +497,18 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'Blog Website Tutorial | MongoDB, Mongoose & Cloudinary',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=Cr-7Ev56C-I',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Blog App',
+    },
+
+    {
         title: 'Full-Stack Website with Next.js 13 | Typescript, Prisma, Cloudinary, Tailwind',
         description: '',
         notes: '',
@@ -486,6 +535,18 @@ export const fullstackVideos = [
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=WLHCPwqHzzQ',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'E-commerce',
+    },
+
+    {
+        title: 'E-Commerce App with next.js - Ecommerce App Using Next.js React Hygraph',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=J5YsAy_XVO4',
         videoLink: '',
         image: '',
         category: 'additional',
@@ -630,6 +691,18 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'NextJs Online Food Ordering App : React.Js, Tailwind Css, Clerk',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=V2AE0YS8WYs',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'E-commerce',
+    },
+
+    {
         title: 'Next.js Application | React, Next JS, TypeScript, Tailwind CSS',
         description: '',
         notes: '',
@@ -641,10 +714,32 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'Nextjs14 Fitness Log Application | mongodb mongoose nextui server actions',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=ityCwWhBYI4',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
         title: 'Weather Application',
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=rscl9VwwnQg',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'AI Fitness Coach Tutorial: NextJS, Typescript, React, ChatGPT, Tailwind, Prisma, Upstash',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=b1S04PFjIOY',
         videoLink: '',
         image: '',
         category: 'additional',

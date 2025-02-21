@@ -143,6 +143,18 @@ export const miniTutorials = [
     //
 
     {
+        title: 'How to Crop Images in React (react-image-crop)',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=odscV57kToU',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+
+    },
+
+    {
         title: 'The easiest way to add videos in NextJs',
         description: '',
         notes: '',
@@ -194,6 +206,17 @@ export const miniTutorials = [
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=h6lVvsUkdjI',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
+        title: 'Palindrome Checker in Reactjs',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=myihClB42d8',
         videoLink: '',
         image: '',
         category: 'additional',

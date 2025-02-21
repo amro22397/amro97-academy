@@ -46,7 +46,8 @@ const page = () => {
             problems to prove your value to companies.
           </span>
         ) : (
-          <span className="work-as-developer-desc">
+          <p className="text-[19px]"
+          style={{fontFamily: "Tajawal"}}>
             إذا قمت بتطبيق إحدى هذه الطرق لتكوين خبرة عملية ، 6 أشهر من تصميم
             المشاريع الحقيقية قد يكون كافياً للحصول على تدريب في شركة ، وسنة أو
             كثر من تكوين الخبرة بنفس الطرق سوف يزيد فرصك لتحصل على وظيفة مبرمج
@@ -55,7 +56,7 @@ const page = () => {
             5-6 مشاريع واجهة أمامية و 3-4 مشاريع واجهة كاملة من الفيديوهات ،
             لأنك كمبرمج تحتاج لتكون جيدا في البرمجة وتستطيع حل المشكلات البرمجية
             التي تواجهك في المشاريع لتثبث قيمتك للشركات
-          </span>
+          </p>
         )}
 
         {/* {locale === "en" ? (
@@ -105,7 +106,9 @@ const page = () => {
                     Search for a job in job platforms
                   </h2>
                 ) : (
-                  <h2 className="accordion-trigger-work-as-developer-h2">
+                  <h2 className="accordion-trigger-work-as-developer-h2"
+                  style={{fontFamily: "Cairo"}}
+                  >
                     أبحث عن عمل في منصات العمل المختلفة
                   </h2>
                 )}
@@ -140,7 +143,9 @@ const page = () => {
                     Search for a remote job
                   </h2>
                 ) : (
-                  <h2 className="accordion-trigger-work-as-developer-h2">
+                  <h2 className="accordion-trigger-work-as-developer-h2"
+                  style={{fontFamily: "Cairo"}}
+                  >
                     أبحث عن عمل عن بعد
                   </h2>
                 )}
@@ -173,7 +178,9 @@ const page = () => {
                     Search for a job in Freelance platforms
                   </h2>
                 ) : (
-                  <h2 className="accordion-trigger-work-as-developer-h2">
+                  <h2 className="accordion-trigger-work-as-developer-h2"
+                  style={{fontFamily: "Cairo"}}
+                  >
                     إبحث عن عمل في منصات العمل الحر
                   </h2>
                 )}
@@ -215,7 +222,9 @@ const page = () => {
                     Search for an internship or training
                   </h2>
                 ) : (
-                  <h2 className="accordion-trigger-work-as-developer-h2">
+                  <h2 className="accordion-trigger-work-as-developer-h2"
+                  style={{fontFamily: "Cairo"}}
+                  >
                     إبحث عن تدريب في شركة
                   </h2>
                 )}
@@ -266,7 +275,9 @@ const page = () => {
                     Work with a team of junior developers
                   </h2>
                 ) : (
-                  <h2 className="accordion-trigger-work-as-developer-h2">
+                  <h2 className="accordion-trigger-work-as-developer-h2"
+                  style={{fontFamily: "Cairo"}}
+                  >
                     إعمل مع فريق من المبرمجين الجدد
                   </h2>
                 )}
@@ -319,7 +330,9 @@ const page = () => {
                     Build your own startup or a freelance project
                   </h2>
                 ) : (
-                  <h2 className="accordion-trigger-work-as-developer-h2">
+                  <h2 className="accordion-trigger-work-as-developer-h2"
+                  style={{fontFamily: "Cairo"}}
+                  >
                     صمم مشروعك الابتدائي أو إعمل مشروع عمل حر
                   </h2>
                 )}
@@ -369,7 +382,9 @@ const page = () => {
                     Search for a virtual experience in google
                   </h2>
                 ) : (
-                  <h2 className="accordion-trigger-work-as-developer-h2">
+                  <h2 className="accordion-trigger-work-as-developer-h2"
+                  style={{fontFamily: "Cairo"}}
+                  >
                     إبحث عن تدريب إفتراضي من خلال قوقل
                   </h2>
                 )}

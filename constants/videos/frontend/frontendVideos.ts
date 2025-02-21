@@ -37,10 +37,10 @@ export const frontendVideos = [
     },
 
     {
-        title: "E-Commerce: Next.js 13, React.js, Typescript, Tailwind, Prisma, Stripe",
+        title: "Nextjs E-Commerce Multi Vendor Sass From Scratch in 2024",
         description: '',
         notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=g88HHFjuMm4',
+        youtubeLink: 'https://www.youtube.com/watch?v=IgnzfALHjdA',
         videoLink: '',
         image: '',
         category: 'basic',
@@ -75,6 +75,18 @@ export const frontendVideos = [
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=qFN6zQZU9jU',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Spotify',
+    },
+
+    {
+        title: "Next.js School Management Dashboard UI Design Tutorial",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=myYlGLFxZas',
         videoLink: '',
         image: '',
         category: 'additional',
@@ -159,6 +171,17 @@ export const frontendVideos = [
     },
 
     {
+        title: 'Rock, Paper and Scissors Game with React JS',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=tCSaSDgz2Hw',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
         title: 'Build a Modern AI Chatbot in Next.js 14 (2024)',
         description: '',
         notes: '',
@@ -178,6 +201,42 @@ export const frontendVideos = [
         image: '',
         category: 'additional',
         arCategory: 'إضافي',
+    },
+
+    {
+        title: "Fitness Tracker Website using React JS |MERN Projects ",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=HISjHTE2vnM',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Gym Website'
+    },
+
+    {
+        title: "React 18 Fitness Exercises App With APIs | RapidAPI ",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=KBpoBc98BwM',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Gym Website'
+    },
+
+    {
+        title: "Gym Website Using Next JS, Typescript, Tailwind CSS And Framer Motion ",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=eN6jk-W1_1I',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'Gym Website'
     },
 
     {
@@ -329,6 +388,18 @@ export const frontendVideos = [
         description: '',
         notes: '',
         youtubeLink: 'https://www.youtube.com/watch?v=domt_Sx-wTY',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+
+    },
+
+    {
+        title: 'Next.js Blog Tutorial: Build SEO Optimized Blog with Next.js, Contentlayer, and Tailwind CSS',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=1QGLHOaRLwM',
         videoLink: '',
         image: '',
         category: 'additional',
