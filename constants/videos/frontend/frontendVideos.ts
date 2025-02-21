@@ -37,10 +37,10 @@ export const frontendVideos = [
     },
 
     {
-        title: "React Node.js Youtube Clone Full Tutorial (Redux, JWT, Cookies)  ",
+        title: "E-Commerce: Next.js 13, React.js, Typescript, Tailwind, Prisma, Stripe",
         description: '',
         notes: '',
-        youtubeLink: 'https://www.youtube.com/watch?v=CCF-xV3RSSs',
+        youtubeLink: 'https://www.youtube.com/watch?v=g88HHFjuMm4',
         videoLink: '',
         image: '',
         category: 'basic',
@@ -57,6 +57,17 @@ export const frontendVideos = [
         category: 'basic',
         arCategory: 'أساسي',
         type: 'Portfolio',
+    },
+
+    {
+        title: "React Node.js Youtube Clone Full Tutorial (Redux, JWT, Cookies)  ",
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=CCF-xV3RSSs',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
     },
 
     {
