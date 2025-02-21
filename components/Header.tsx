@@ -114,7 +114,7 @@ export default function Header({
           </Link>
 
           <ul
-            className={`hidden pl-5 2xl:pl-14 align-middle 2xl:flex mt-[13.5px] ${
+            className={`hidden pl-5 xl:pl-14 align-middle xl:flex mt-[13.5px] ${
               locale === "ar" && "px-4"
             }`}
           >
@@ -137,7 +137,7 @@ export default function Header({
         </div>
 
         <div
-          className="hidden text-right 2xl:flex 2xl:flex-row items-center justify-center gap-6
+          className="hidden text-right xl:flex xl:flex-row items-center justify-center gap-6
         mt-2"
         >
           {/* <Link
@@ -192,7 +192,7 @@ export default function Header({
           </button>
         </div>
 
-        <div className="flex flex-row justify-center items-center gap-5 2xl:hidden">
+        <div className="flex flex-row justify-center items-center gap-5 xl:hidden">
           
 
           
@@ -206,7 +206,7 @@ export default function Header({
 
         {openMobileNav && (
           <div
-            className="2xl:hidden w-full absolute top-[63px] left-0 bg-white sm:w-[50vw] sm:h-[100vh]
+            className="xl:hidden w-full absolute top-[63px] left-0 bg-white sm:w-[50vw] sm:h-[100vh]
             md:w-[40vw] lg:w-[30vw] py-5 flex flex-col justify-start items-center"
           >
             <IoClose
