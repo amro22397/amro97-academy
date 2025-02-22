@@ -23,6 +23,8 @@ const page = () => {
 
   const locale = useLocale();
 
+  const jFullstackVideos = JSON.parse(JSON.stringify(fullstackVideos))
+
   return (
     <div className="videosPage">
       <div className="flex flex-col items-center justify-center gap-3">
@@ -75,7 +77,7 @@ const page = () => {
       </Accordion>
 
 
-      <VideoAndMenu videos={fullstackVideos} search={search} />
+      <VideoAndMenu videos={jFullstackVideos} search={search} />
 
 
       <SearchBar setSearch={setSearch} />

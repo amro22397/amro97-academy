@@ -182,6 +182,17 @@ export const frontendVideos = [
     },
 
     {
+        title: 'News App using React Js',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=Ka8GoIUhM3g',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
         title: 'Build a Modern AI Chatbot in Next.js 14 (2024)',
         description: '',
         notes: '',

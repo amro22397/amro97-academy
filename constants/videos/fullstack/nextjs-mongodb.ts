@@ -473,6 +473,16 @@ export const fullstackVideos = [
     },
 
     {
+        title: 'AI Content Generator App Using NextJs, React, TailwindCss, Typescript, Gemini, Clerk',
+        description: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=egQajXL7nn4',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
+
+    {
         title: 'Next.js WhatsApp Web Clone (Stream, Clerk Auth, Web Push Notifications, Tailwind CSS, TypeScript)',
         description: '',
         notes: 'This app uses service called stream it is not recommended to use to make apps.',
@@ -665,19 +675,7 @@ export const fullstackVideos = [
         image: '',
         category: 'additional',
         arCategory: 'إضافي',
-    },
-
-    // MERN
-    // {
-    //     title: 'Food Delivery Website In React JS, MongoDB, Express, Node JS & Stripe',
-    //     description: '',
-    //     notes: '',
-    //     youtubeLink: 'https://www.youtube.com/watch?v=DBMPXJJfQEA',
-    //     videoLink: '',
-    //     image: '',
-    //     category: 'additional',
-    //     arCategory: 'إضافي',
-    // },
+    },    
 
     {
         title: 'E-Commerce Store using Next.js 15, Kinde-Auth, Neon, Upstash, Prisma, Stripe',
@@ -878,6 +876,7 @@ export const fullstackVideos = [
         image: '',
         category: 'additional',
         arCategory: 'إضافي',
+        type: 'Hotel App'
     },
 
     {
@@ -889,6 +888,7 @@ export const fullstackVideos = [
         image: '',
         category: 'additional',
         arCategory: 'إضافي',
+        type: 'Hotel App'
     },
 
     // {
@@ -901,6 +901,17 @@ export const fullstackVideos = [
     //     category: 'additional',
     // arCategory: 'إضافي',
     // },
+
+    {
+        title: 'Email SaaS Course - Next JS 14, Prisma, OpenAI, Stripe, TypeScript, Tailwind ',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=zMJSyzg63o0',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+    },
 
     {
         title: 'Next.js, TypeScript, and AWS Course – Code a Quote Generator',

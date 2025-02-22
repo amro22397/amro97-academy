@@ -25,7 +25,7 @@ body {
 }
 
 .heroButtonSpanArabic {
-  @apply md:text-[26px] mb-1 text-2xl;
+  @apply md:text-[26px] mb-1 text-[22px];
 }
 
 .heroButtonSpanEnglish {

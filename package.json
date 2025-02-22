@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "email": "email dev --dir app/emails"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -21,6 +22,7 @@
     "@radix-ui/react-separator": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.2",
     "@radix-ui/react-toast": "^1.2.6",
+    "@react-email/components": "^0.0.33",
     "@sendgrid/mail": "^8.1.4",
     "axios": "^1.7.9",
     "bcrypt": "^5.1.1",
@@ -38,9 +40,11 @@
     "next-auth": "^4.24.11",
     "next-intl": "^3.26.3",
     "next-themes": "^0.4.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "nodemailer": "^6.10.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "react-icons": "^5.4.0",
+    "resend": "^4.1.2",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -48,11 +52,13 @@
     "@eslint/eslintrc": "^3",
     "@types/bcrypt": "^5.0.2",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "postcss": "^8",
+    "react-email": "3.0.7",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

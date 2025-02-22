@@ -12,6 +12,18 @@ export const miniTutorials = [
     },
 
     {
+        title: 'React Email with Resend (Complete Tutorial)',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=btZII7TXlhk',
+        videoLink: '',
+        image: '',
+        category: 'basic',
+        arCategory: 'أساسي',
+
+    },
+
+    {
         title: 'Next.js Dark Mode with No Flicker + Tailwind CSS',
         description: '',
         notes: 'After applying dark mode settings from this video you can style in dark mode like that: dark:bg-gray-900 ',
@@ -141,6 +153,19 @@ export const miniTutorials = [
     //
     //
     //
+
+    {
+        title: 'use Google Drive API to upload, delete and create a public URL for a file. 🔥',
+        description: '',
+        notes: '',
+        youtubeLink: 'https://www.youtube.com/watch?v=1y0-IfRW114',
+        videoLink: '',
+        image: '',
+        category: 'additional',
+        arCategory: 'إضافي',
+        type: 'File Upload'
+
+    },
 
     {
         title: 'How to Crop Images in React (react-image-crop)',

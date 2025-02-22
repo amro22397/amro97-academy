@@ -89,7 +89,9 @@ const CoursesContent = () => {
         <div className="flex flex-col gap-2 mx-7">
           {basics.map((link, index) => {
             return (
-              <div className="flex flex-col justify-center items-center gap-0">
+              <div className="flex flex-col justify-center items-center gap-0"
+              key={link.name}
+              >
                 <Link
                   href={`/${locale}${link.href}`}
                   className={`text-[17.5px] hover:underline hover:text-black/85 active:scale-95 tracking-wide ${link.style}`}
